@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GameofKingdom
+namespace GameofKingdom.windows
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy Welcome.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Welcome : Window
     {
-        public MainWindow()
+        public Welcome()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿GameofKingdom
 
 
-winexe
+exe
 C#
 .cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\localhost\source\repos\GameofKingdom\App.xaml
-11407045341
+4-1730466703
 
-3-1233169557
+61555918532
 194-1325968647
-MainWindow.xaml;
+windows\Main.xaml;windows\Settings.xaml;windows\Shop.xaml;windows\Welcome.xaml;
 
-True
+False
 

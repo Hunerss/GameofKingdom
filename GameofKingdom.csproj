@@ -1,10 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\background_image.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="windows\MainWindowPages\" />
+    <Folder Include="windows\WelcomeWindowPages\" />
+    <Folder Include="windows\ShopWindowPages\" />
+    <Folder Include="windows\SettingsWindowPages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\background_image.jpg" />
+  </ItemGroup>
 
 </Project>
