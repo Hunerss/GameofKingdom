@@ -7,7 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="windows\Instruction.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\Licence.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="windows\Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\MainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\Score.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\ScorePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="windows\Settings.xaml.cs">
@@ -19,9 +34,36 @@
     <Compile Update="windows\Welcome.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="windows\tmp\WelcomeWindowPages\InstructionPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\tmp\WelcomeWindowPages\LicencePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\tmp\WelcomeWindowPages\MainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\tmp\WelcomeWindowPages\ScorePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="windows\Instruction.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\Licence.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="windows\Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\Score.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\ScorePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\Settings.xaml">
@@ -31,6 +73,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\Welcome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\tmp\WelcomeWindowPages\InstructionPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\tmp\WelcomeWindowPages\LicencePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\tmp\WelcomeWindowPages\MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\tmp\WelcomeWindowPages\ScorePage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

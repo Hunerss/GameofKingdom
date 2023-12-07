@@ -1,0 +1,27 @@
+﻿<Window x:Class="GameofKingdom.windows.Instruction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameofKingdom.windows"
+        mc:Ignorable="d"
+        Title="GameOfKingdom" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Opis gry</TextBlock>
+        <TextBlock Background="AliceBlue" Name="instruction" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="2" MaxWidth="500" TextWrapping="Wrap"></TextBlock>
+        <DockPanel Grid.Row="3" Margin="170 00 170 00">
+            <Button  Width="175" FontSize="22" Content="Wróć do menu" HorizontalAlignment="Left" Click="Btn_return"/>
+            <Button  Width="175" FontSize="22" Content="Spojlery" HorizontalAlignment="Right" Click="Btn_return"/>
+        </DockPanel>
+        <Grid.Background>
+            <ImageBrush ImageSource="\images\background_image.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+    </Grid>
+</Window>

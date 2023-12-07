@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="GameOfKingdom" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45">Welcome</TextBlock>
+        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden"/>
         <Grid.Background>
             <ImageBrush ImageSource="\images\background_image.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
