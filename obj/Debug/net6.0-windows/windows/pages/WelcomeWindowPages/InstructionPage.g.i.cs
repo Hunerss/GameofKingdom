@@ -61,8 +61,7 @@ namespace GameofKingdom.windows.tmp.WelcomeWindowPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GameofKingdom;V1.0.0.0;component/windows/pages/welcomewindowpages/instructionpag" +
-                    "e.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GameofKingdom;component/windows/pages/welcomewindowpages/instructionpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\windows\pages\WelcomeWindowPages\InstructionPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

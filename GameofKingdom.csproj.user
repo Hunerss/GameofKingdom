@@ -10,6 +10,12 @@
     <Compile Update="windows\Main.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="windows\pages\MainWindowPages\GamePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windows\pages\MainWindowPages\LogInPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="windows\pages\SettingsWindowPages\GameSettingsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="windows\Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\pages\MainWindowPages\GamePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\pages\MainWindowPages\LogInPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\pages\SettingsWindowPages\GameSettingsPage.xaml">

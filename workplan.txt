@@ -58,7 +58,6 @@ Popraw
 
 Przerób
 	Wygląd wszystkich okien - obecna wersja jest do niczego
-	Podział na "okna" i "strony" w celu redukcji ilości zbędnych, zasobo żernych okien
 	Przyciski, bo wyglądają jak gówno
 
 Napraw

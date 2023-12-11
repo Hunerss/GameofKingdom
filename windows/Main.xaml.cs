@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GameofKingdom.rescources.classes;
+using GameofKingdom.windows.pages.MainWindowPages;
+using GameofKingdom.windows.tmp.SettingsWindowPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +25,7 @@ namespace GameofKingdom.windows
         public Main()
         {
             InitializeComponent();
+            Basic.NavigateTo(frame, new LogInPage(this));
         }
     }
 }
