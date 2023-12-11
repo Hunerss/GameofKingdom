@@ -21,13 +21,13 @@ Nowe
 					Obliczanie ({Szybkość gry} + {Bazowe zasoby})/2 potem zaokrąglamy w górę i określamy poziom trudności
 					Poziom trudności jest mnożnikiem wyniku przed wpisaniem go do pliku json
 		Licence
-			Automatycznie odpalasz, jeśli nie ma plików w systemie
-				Sprawdzasz czy są pliki
-				Zastępujesz bazowe 1 okno tym oknem (po zmianach stroną)
-			Wyświetlasz, całą długą licencje użytkowania
-				Napisz lub ukradnij umowę licencyjną
-			Pytasz się o zgodę na zapisywanie plików z danymi
-				Bez zgodny nie pozwalasz zrobić nic poza zamknięciem
+			Automatycznie odpalasz, jeśli nie ma plików w systemie +
+				Sprawdzasz czy są pliki +
+				Zastępujesz bazowe 1 okno tym oknem (po zmianach stroną) +
+			Wyświetlasz, całą długą licencje użytkowania +
+				Napisz lub ukradnij umowę licencyjną +
+			Pytasz się o zgodę na zapisywanie plików z danymi +
+				Bez zgodny nie pozwalasz zrobić nic poza zamknięciem +
 			Zapiszujesz i szyfrujesz dane głeboko w systemie
 				W powszechnym app data jeśli da radę, a jak nie w powszechnych dokumentach
 				Szyfrowanie Sha256
@@ -58,6 +58,7 @@ Popraw
 
 Przerób
 	Wygląd wszystkich okien - obecna wersja jest do niczego
+	Podział na "okna" i "strony" w celu redukcji ilości zbędnych, zasobo żernych okien +
 	Przyciski, bo wyglądają jak gówno
 
 Napraw

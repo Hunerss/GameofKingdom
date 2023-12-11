@@ -1,4 +1,5 @@
 ﻿using GameofKingdom.rescources.classes;
+using GameofKingdom.windows.tmp.WelcomeWindowPages;
 using System;
 using System.Windows;
 
@@ -12,7 +13,10 @@ namespace GameofKingdom.windows
         public Welcome()
         {
             InitializeComponent();
-            Basic.NavigateTo(frame, new MainPage(this));
-        }
+            if(FileHandeler.CheckFile())
+                Basic.NavigateTo(frame, new MainPage(this));
+            else
+                Basic.NavigateTo(frame, new LicencePage(this));
+        }   
     }
 }

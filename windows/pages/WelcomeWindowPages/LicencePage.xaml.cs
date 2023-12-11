@@ -32,7 +32,23 @@ namespace GameofKingdom.windows.tmp.WelcomeWindowPages
 
         private void Btn_return(object sender, RoutedEventArgs e)
         {
-            Basic.NavigateTo(window.frame, new MainPage(window));
+            if (LicenceAgreament.IsChecked == true && FileHandeler.CheckFile())
+            {
+                Console.WriteLine("Licence Accpeted Another Time");
+                Basic.NavigateTo(window.frame, new MainPage(window));
+            }
+            else if (LicenceAgreament.IsChecked == true)
+            {
+                Console.WriteLine("Licence Accpeted - Creating Licence File");
+                FileHandeler.WriteLicence();
+                Basic.NavigateTo(window.frame, new MainPage(window));
+            }
+            else
+            {
+                Console.WriteLine("Licence Error - Licence not accepted");
+                MessageBox.Show("Umowa Licenycja nie zakceptowana, zamykanie aplikacji");
+                Window.GetWindow(this).Close();
+            }
         }
     }
 }

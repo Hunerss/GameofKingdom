@@ -1,0 +1,19 @@
+﻿Licencja Użytkowania Gry
+	1. ZAKRES LICENCJI
+		Niniejsza umowa licencyjna obejmuje grę komputerową "Game of Kingdom", wraz z wszelkimi materiałami towarzyszącymi, oprogramowaniem, aktualizacjami, dodatkami i wszelkimi dostarczanymi treściami (zwane dalej „Grą”). Grę dostarcza [nazwa firmy lub dewelopera] (zwane dalej „Dostawca”).
+	2. PRAWA LICENCYJNE
+		a. Licencja Użytkowania Gry: Dostawca udziela Użytkownikowi ograniczonej, nieprzenoszalnej licencji na korzystanie z Gry zgodnie z warunkami niniejszej umowy.
+		b. Ograniczenia: Użytkownik nie może kopiować, modyfikować, rozpowszechniać, sprzedawać ani tworzyć utworów pochodnych na podstawie Gry. Nie można również obejść lub usuwać zabezpieczeń przed kopiowaniem lub innych mechanizmów zabezpieczających w Grze.
+	3. WARUNKI KORZYSTANIA
+		a. Wiek Użytkownika: Użytkownik potwierdza, że jest pełnoletni lub ma zgodę opiekuna prawnego na korzystanie z Gry.
+		b. Akceptacja Warunków: Korzystanie z Gry oznacza akceptację wszystkich warunków niniejszej umowy.
+		c. Aktualizacje i Dodatki: Dostawca może dostarczać aktualizacje i dodatki do Gry. Użytkownik zobowiązuje się do akceptacji i instalacji tych aktualizacji.
+	4. WSPIERANIE I GWARANCJE
+		a. Wsparcie Techniczne: Dostawca zobowiązuje się dostarczać rozsądne wsparcie techniczne dla Gry.
+		b. Brak Gwarancji: Gra dostarczana jest "tak, jak jest", bez żadnych gwarancji. Dostawca nie ponosi odpowiedzialności za ewentualne szkody wynikłe z korzystania z Gry.
+	5. ZAKOŃCZENIE LICENCJI
+		Licencja może zostać zakończona przez Użytkownika lub Dostawcę w razie naruszenia postanowień umowy. Po zakończeniu licencji Użytkownik zobowiązuje się do natychmiastowego zakończenia korzystania z Gry i zniszczenia wszelkich kopii Gry w posiadaniu Użytkownika.
+	6. POSTANOWIENIA KOŃCOWE
+		a. Obowiązujące Prawo: Umowę tę reguluje prawo Rzeczpospolitej Polskiej.
+		b. Zmiany Umowy: Dostawca zastrzega sobie prawo do wprowadzania zmian w niniejszej umowie. Użytkownik będzie informowany o zmianach przed ich wprowadzeniem.
+		c. Całość Umowy: Niniejsza umowa stanowi pełne porozumienie między Użytkownikiem a Dostawcą dotyczące korzystania z Gry.

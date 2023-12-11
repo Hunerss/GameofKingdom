@@ -16,4 +16,13 @@ namespace GameofKingdom.rescources.classes
         public string Name { get; set; }
         public int Score { get; set; }
     }
+
+    class LicenceModel
+    {
+        public string Name { get; set; }
+
+        public string Code { get; set; }
+
+        public Boolean Licence { get; set; }
+    }
 }

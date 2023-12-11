@@ -15,7 +15,21 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Instrukcja</TextBlock>
-        <TextBlock Background="AliceBlue" Name="instruction" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Grid.Row="2" MaxWidth="500" TextWrapping="Wrap"></TextBlock>
+        <ScrollViewer Grid.Row="2">
+            <TextBlock TextWrapping="Wrap" Margin="25">
+                Instrukcja do Gry "Game of Kingdom":<LineBreak/><LineBreak/>
+                "Game of Kingdom" to prosta, lecz fascynująca gra karciano-strategiczna, w której gracze podejmują decyzje w losowo generowanych zdarzeniach. Gra polega na utrzymaniu równowagi w państwie poprzez mądre wybory i zarządzanie zasobami.<LineBreak/>
+                Zasady gry:<LineBreak/><LineBreak/>
+                1. Decyzje w Zdarzeniach: Gracze są konfrontowani z różnorodnymi sytuacjami, a każda z nich wymaga podjęcia decyzji. Każde zdarzenie ma trzy możliwe wybory, z których każdy ma swoje konsekwencje.<LineBreak/><LineBreak/>
+                2. Skutki Wyborów: Każda opcja decyzji może mieć negatywne, pozytywne lub mieszane skutki. Gracz musi zręcznie balansować, aby unikać problemów i utrzymać dobrobyt w państwie.<LineBreak/><LineBreak/>
+                3. Zarządzanie Państwem: Gracz musi dbać o równowagę w swoim państwie, podejmując decyzje dotyczące żywności, pieniędzy, armii, kontroli i populacji.<LineBreak/><LineBreak/>
+                4. Ograniczony Czas Gry: Gra ma ograniczoną liczbę wydarzeń, co dodaje elementu wyzwania. Gracze muszą podejmować szybkie i trafne decyzje, aby osiągnąć jak największą ilość punktów.<LineBreak/><LineBreak/>
+                5. Zakończenie Gry: Gra kończy się po upływie czasu. Punkty zdobyte w trakcie gry są podliczane, a wyniki umieszczane są na tablicy rankingowej.<LineBreak/><LineBreak/>
+                6. Różnorodność Zakupów: Niektóre zakupy działają tylko w określonych warunkach lub na konkretne zdarzenia. Gracz musi wybierać mądrze, ponieważ nie wszystkie przedmioty są uniwersalne.<LineBreak/><LineBreak/>
+                7. Przyspieszenie Rozgrywki: Gracz może dokonywać zakupów, aby przyspieszyć rozgrywkę lub doświadczyć niekonwencjonalnych zdarzeń, które wychodzą poza standardowe sytuacje.<LineBreak/><LineBreak/><LineBreak/>
+                Gra "Game of Kingdom" oferuje dynamiczną rozgrywkę, gdzie każda decyzja ma wpływ na losy państwa. Celem gracza jest osiągnięcie jak największej ilości punktów w ograniczonym czasie oraz zdobycie miejsca na prestiżowej tablicy wyników.<LineBreak/>
+            </TextBlock>
+        </ScrollViewer>
         <Button Grid.Row="3" Width="175" FontSize="22" Content="Wróć do menu" HorizontalAlignment="Center" Click="Btn_return"/>
     </Grid>
 </UserControl>
