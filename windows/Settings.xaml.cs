@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GameofKingdom.rescources.classes;
+using GameofKingdom.windows.tmp.SettingsWindowPages;
+using GameofKingdom.windows.tmp.ShopWindowPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +25,7 @@ namespace GameofKingdom.windows
         public Settings()
         {
             InitializeComponent();
+            Basic.NavigateTo(frame, new GraphicSettingsPage(this));
         }
     }
 }

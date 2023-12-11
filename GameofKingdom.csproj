@@ -12,9 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="windows\tmp\MainWindowPages\" />
-    <Folder Include="windows\tmp\ShopWindowPages\" />
-    <Folder Include="windows\tmp\SettingsWindowPages\" />
+    <Folder Include="windows\pages\MainWindowPages\" />
   </ItemGroup>
 
   <ItemGroup>

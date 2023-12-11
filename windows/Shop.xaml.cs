@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GameofKingdom.rescources.classes;
+using GameofKingdom.windows.tmp.ShopWindowPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,8 @@ namespace GameofKingdom.windows
         public Shop()
         {
             InitializeComponent();
+            //Basic.NavigateTo(frame, new RealMoneyPage(this));
+            Basic.NavigateTo(frame, new RealMoneyPage());
         }
     }
 }
