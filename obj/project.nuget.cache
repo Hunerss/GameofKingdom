@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Wzd2VViOnEK+4sov+PFZUBd8/B7pKIjEHN1zLrnICKLy/qiPQTPZBTp6b2+kDADbHqhCZ+aQsGE2yls2bzDxCA==",
+  "dgSpecHash": "i1ShTlWYRN/t0195cNimN03BaoqKznHmVb2ZZJDA9u7bpa7hSuf9bvTfPANK51JPnZwY67H0JZDFdJ9aUUzO3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\localhost\\source\\repos\\GameofKingdom\\GameofKingdom.csproj",
+  "projectFilePath": "C:\\Users\\11344\\Source\\Repos\\GameofKingdom\\GameofKingdom.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\localhost\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\11344\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\
+C:\Users\11344\Source\Repos\GameofKingdom\obj\Debug\net6.0-windows\
 GameofKingdom
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\localhost\source\repos\GameofKingdom\App.xaml
+C:\Users\11344\Source\Repos\GameofKingdom\App.xaml
 1473075380
 
 21-1449054300
-1951422256898
+195-305032174
 windows\Main.xaml;windows\pages\MainWindowPages\GamePage.xaml;windows\pages\MainWindowPages\LogInPage.xaml;windows\pages\SettingsWindowPages\GameSettingsPage.xaml;windows\pages\SettingsWindowPages\GraphicSettingsPage.xaml;windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml;windows\pages\ShopWindowPages\RealMoneyPage.xaml;windows\pages\WelcomeWindowPages\InstructionPage.xaml;windows\pages\WelcomeWindowPages\LicencePage.xaml;windows\pages\WelcomeWindowPages\MainPage.xaml;windows\pages\WelcomeWindowPages\ScorePage.xaml;windows\Settings.xaml;windows\Shop.xaml;windows\Welcome.xaml;
 
-False
+True
 
