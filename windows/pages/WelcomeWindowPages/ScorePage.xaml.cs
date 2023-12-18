@@ -4,17 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace GameofKingdom.windows
 {
@@ -35,16 +26,29 @@ namespace GameofKingdom.windows
 
         private void DisplayScores()
         {
-            // zmień na bardziej cool w appdata albo chociaż dokumentach
-            // C:\Users\localhost\source\repos\GameofKingdom\rescources\events.json
-            //string path = @"C:\Users\localhost\source\repos\GameofKingdom\rescources\scores.json";
-            string path = @"C:\Users\11344\Source\Repos\GameofKingdom\rescources\scores.json";
-            string json = File.ReadAllText(path);
-            Console.WriteLine(json);
-            List<ScoreModel> scores = JsonConvert.DeserializeObject<List<ScoreModel>>(json);
-            scores = scores.OrderByDescending(score => score.Score).ToList();
-            ScoreList.ItemsSource = scores;
-            ScoreList.ItemTemplate = (DataTemplate)Resources["Score"];
+            string path = @"C:\ProgramData\GameOfKingdom\Scores.json";
+            if (File.Exists(path))
+            {
+                string json;
+
+                using StreamReader rdr = new(path);
+                json = rdr.ReadToEnd();
+
+                if (!string.IsNullOrEmpty(json))
+                {
+                    Console.WriteLine("Welcome Window - Score Page - log - scores list" + json);
+                
+                    List<ScoreModel> scores = JsonConvert.DeserializeObject<List<ScoreModel>>(json);
+                    scores = scores.OrderByDescending(score => score.Score).ToList();
+                    ScoreList.ItemsSource = scores;
+                    ScoreList.ItemTemplate = (DataTemplate)Resources["Score"];
+
+                }
+                else
+                    Console.WriteLine("Welcome Window - Score Page - error log - json string is empty");
+            }
+            else
+                Console.WriteLine("Welcome Window - Score Page - error log - score file doesn't exist");
         }
 
         private void Btn_return(object sender, RoutedEventArgs e)

@@ -20,20 +20,7 @@ Nowe
 					Wartości liczbowe: Łatwy = 1 | Średni = 2 | Trudny = 3 | Bardzo trundy = 4
 					Obliczanie ({Szybkość gry} + {Bazowe zasoby})/2 potem zaokrąglamy w górę i określamy poziom trudności
 					Poziom trudności jest mnożnikiem wyniku przed wpisaniem go do pliku json
-		Licence
-			Automatycznie odpalasz, jeśli nie ma plików w systemie +
-				Sprawdzasz czy są pliki +
-				Zastępujesz bazowe 1 okno tym oknem (po zmianach stroną) +
-			Wyświetlasz, całą długą licencje użytkowania +
-				Napisz lub ukradnij umowę licencyjną +
-			Pytasz się o zgodę na zapisywanie plików z danymi +
-				Bez zgodny nie pozwalasz zrobić nic poza zamknięciem +
-			Zapiszujesz i szyfrujesz dane głeboko w systemie
-				W powszechnym app data jeśli da radę, a jak nie w powszechnych dokumentach
-				Szyfrowanie Sha256
-		Instruction
-			Opis jak grać oraz co robią poszczególne rzeczy 
-				Proste jak budowa cepa
+			Dynamiczna nawigacja +
 		Main
 			Nakładka "logowani"
 				Pozwala na wpisanie nazwy użytkownika innej niż "", "Admin", "admin", inne wariacje admina oraz obraźliwe słowa 
@@ -62,3 +49,20 @@ Przerób
 	Przyciski, bo wyglądają jak gówno
 
 Napraw
+
+Zrealizowane
+	Okna
+		Licence
+			Automatycznie odpalasz, jeśli nie ma plików w systemie +
+				Sprawdzasz czy są pliki +
+				Zastępujesz bazowe 1 okno tym oknem (po zmianach stroną) +
+			Wyświetlasz, całą długą licencje użytkowania +
+				Napisz lub ukradnij umowę licencyjną +
+			Pytasz się o zgodę na zapisywanie plików z danymi +
+				Bez zgodny nie pozwalasz zrobić nic poza zamknięciem +
+			Zapiszujesz i szyfrujesz dane głeboko w systemie
+				W powszechnym app data jeśli da radę, a jak nie w powszechnych dokumentach+
+				Szyfrowanie Sha256
+		Instruction
+			Opis jak grać oraz co robią poszczególne rzeczy 
+				Proste jak budowa cepa

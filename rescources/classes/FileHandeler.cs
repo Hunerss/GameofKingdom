@@ -1,91 +1,119 @@
-﻿using System.Text.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text.Json;
 
 namespace GameofKingdom.rescources.classes
 {
     internal class FileHandeler
     {
 
-        private static string GameDataDirectory = @"AppData\Roaming\GameOfKingdom";
-        private static string LicenceFilePath = @"AppData\Roaming\LicenceAgreement.json";
-        private static string scoresPath = @"";
+        private static string GameDataDirectory = @"C:\ProgramData\GameOfKingdom";
+        private static string LicenceFilePath = @"C:\ProgramData\GameOfKingdom\LicenceAgreement.json";
+        private static string ScoresPath = @"C:\ProgramData\GameOfKingdom\Scores.json";
 
         public static Boolean CheckFile(Boolean repetitive)
         {
+            Boolean fileExists = File.Exists(LicenceFilePath);
+            Console.WriteLine("CheckFile - beggining log - do file exist - " + fileExists);
+            Boolean directoryExists = Directory.Exists(GameDataDirectory);
+            Console.WriteLine("CheckFile - beggining log - do directory exist - " + directoryExists);
             if (repetitive)
-            {
-                return Directory.Exists(GameDataDirectory) ? File.Exists(LicenceFilePath) : false;
-            }
+                return directoryExists && fileExists;
             else
             {
-                if (!Directory.Exists(GameDataDirectory))
-                {
+                if (!directoryExists)
                     Directory.CreateDirectory(GameDataDirectory);
-                }
-                if (File.Exists(LicenceFilePath))
+
+                if (!fileExists)
                 {
-                    if (!FileHandeler.LicenceExist())
-                        FileHandeler.WriteLicence(true);
-                    else
-                        return true;
+                    using (File.Create(LicenceFilePath)) { }
+                    WriteLicence(false);
                 }
-                else
-                {
-                    File.Create(LicenceFilePath);
-                    FileHandeler.WriteLicence(false);
-                }
+                else if (!LicenceExist())
+                    WriteLicence(true);
+
                 return false;
             }
         }
 
         private static Boolean LicenceExist()
         {
-            string json = File.ReadAllText(LicenceFilePath);
-            string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-            List<ScoreModel> scores = JsonSerializer.Deserialize<List<ScoreModel>>(json);
-            foreach (ScoreModel score in scores)
-                if (score.Name == userName)
-                    return true;
+            if (File.Exists(LicenceFilePath))
+            {
+                string json = File.ReadAllText(LicenceFilePath);
+                if (!string.IsNullOrEmpty(json))
+                {
+                    Console.WriteLine("LicenceExist() - middle log - json" + json);
 
+                    List<LicenceModel> licences = JsonSerializer.Deserialize<List<LicenceModel>>(json);
+
+                    string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+
+                    return licences.Any(licence => licence.Name == userName);
+                }
+            }
             return false;
         }
 
         public static void WriteLicence(Boolean Edit)
         {
             Random rn = new();
-            // wpisuje licencje do pliky json
-            // a jeśli taki plik istnieje to najpierw go niszczy lub czyśic idk co lepsze
-            
-            if (Edit)
-            {
-                // dodaje coś do pliku licencjowego
-                if (File.Exists(LicenceFilePath))
-                {
+            List<LicenceModel> users = new();
 
-                }
-            }
-            else
+            if (Edit && File.Exists(LicenceFilePath))
             {
-                // pisze plik zupełnie od zera
-                List<LicenceModel> data = new()
-                {
-                    new LicenceModel()
-                    {
-                        Name = System.Security.Principal.WindowsIdentity.GetCurrent().Name,
-                        Code = Convert.ToString(rn.Next(999999999)),
-                        Licence = true
-                    }
-                };
-                string json = JsonSerializer.Serialize(data);
-                File.WriteAllText(LicenceFilePath, json);
+                string json = File.ReadAllText(LicenceFilePath);
+                users = JsonSerializer.Deserialize<List<LicenceModel>>(json);
             }
+
+            users.Add(new LicenceModel()
+            {
+                Name = System.Security.Principal.WindowsIdentity.GetCurrent().Name,
+                Code = Convert.ToString(rn.Next(999999999)),
+                Licence = true
+            });
+
+            string licence = JsonSerializer.Serialize(users);
+
+            if (!string.IsNullOrEmpty(licence))
+                File.WriteAllText(LicenceFilePath, licence);
+            else
+                Console.WriteLine("WriteLicence - error log - licence string is null");
         }
 
         public static Boolean CheckScore(int score, string name)
         {
             // sprawdza czy wynik rozegranej gry jest poprawny
+            return true;
+        }
+
+        public static Boolean CheckScores(Boolean repetitive)
+        {
+            // sprawdza czy plik z wynikami istnieje i jeśli nie to go tworzy
+            if (repetitive)
+            {
+                return File.Exists(ScoresPath);
+            }
+            else
+            {
+                if (!File.Exists(ScoresPath))
+                {
+                    File.Create(ScoresPath);
+                    List<ScoreModel> data = new()
+                {
+                    new ScoreModel()
+                    {
+                        Id = "0",
+                        Name = "Admin",
+                        Score = 250
+                    }
+                };
+                    string json = JsonSerializer.Serialize(data);
+                    File.WriteAllText(ScoresPath, json);
+                }
+            }
             return true;
         }
 

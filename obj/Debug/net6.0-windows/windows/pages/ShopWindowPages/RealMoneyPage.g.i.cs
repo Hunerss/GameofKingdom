@@ -53,8 +53,7 @@ namespace GameofKingdom.windows.tmp.ShopWindowPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GameofKingdom;V1.0.0.0;component/windows/pages/shopwindowpages/realmoneypage.xam" +
-                    "l", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GameofKingdom;component/windows/pages/shopwindowpages/realmoneypage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\windows\pages\ShopWindowPages\RealMoneyPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
