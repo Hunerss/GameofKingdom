@@ -32,7 +32,7 @@ namespace GameofKingdom.windows.tmp.WelcomeWindowPages
 
         private void Btn_return(object sender, RoutedEventArgs e)
         {
-            if (LicenceAgreament.IsChecked == true && FileHandeler.CheckFile())
+            if (LicenceAgreament.IsChecked == true && FileHandeler.CheckFile(false))
             {
                 Console.WriteLine("Licence Accpeted Another Time");
                 Basic.NavigateTo(window.frame, new MainPage(window));
@@ -40,7 +40,7 @@ namespace GameofKingdom.windows.tmp.WelcomeWindowPages
             else if (LicenceAgreament.IsChecked == true)
             {
                 Console.WriteLine("Licence Accpeted - Creating Licence File");
-                FileHandeler.WriteLicence();
+                //FileHandeler.WriteLicence();
                 Basic.NavigateTo(window.frame, new MainPage(window));
             }
             else
