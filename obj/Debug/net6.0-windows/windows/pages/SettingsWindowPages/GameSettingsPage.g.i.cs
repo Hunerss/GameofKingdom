@@ -53,7 +53,8 @@ namespace GameofKingdom.windows.tmp.SettingsWindowPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GameofKingdom;component/windows/pages/settingswindowpages/gamesettingspage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GameofKingdom;V1.0.0.0;component/windows/pages/settingswindowpages/gamesettingsp" +
+                    "age.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\windows\pages\SettingsWindowPages\GameSettingsPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -37,7 +37,8 @@ namespace GameofKingdom.windows
         {
             // zmień na bardziej cool w appdata albo chociaż dokumentach
             // C:\Users\localhost\source\repos\GameofKingdom\rescources\events.json
-            string path = @"C:\Users\localhost\source\repos\GameofKingdom\rescources\scores.json";
+            //string path = @"C:\Users\localhost\source\repos\GameofKingdom\rescources\scores.json";
+            string path = @"C:\Users\11344\Source\Repos\GameofKingdom\rescources\scores.json";
             string json = File.ReadAllText(path);
             Console.WriteLine(json);
             List<ScoreModel> scores = JsonConvert.DeserializeObject<List<ScoreModel>>(json);

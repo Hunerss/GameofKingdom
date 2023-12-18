@@ -13,7 +13,7 @@ namespace GameofKingdom.windows
         public Welcome()
         {
             InitializeComponent();
-            if(FileHandeler.CheckFile())
+            if(FileHandeler.CheckFile(true))
                 Basic.NavigateTo(frame, new MainPage(this));
             else
                 Basic.NavigateTo(frame, new LicencePage(this));

@@ -53,8 +53,8 @@ namespace GameofKingdom.windows.tmp.SettingsWindowPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GameofKingdom;component/windows/pages/settingswindowpages/languagesettingspage.x" +
-                    "aml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GameofKingdom;V1.0.0.0;component/windows/pages/settingswindowpages/languagesetti" +
+                    "ngspage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
