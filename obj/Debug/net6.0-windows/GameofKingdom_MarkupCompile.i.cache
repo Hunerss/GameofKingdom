@@ -16,5 +16,5 @@ C:\Users\localhost\source\repos\GameofKingdom\App.xaml
 1951422256898
 windows\Main.xaml;windows\pages\MainWindowPages\GamePage.xaml;windows\pages\MainWindowPages\LogInPage.xaml;windows\pages\SettingsWindowPages\GameSettingsPage.xaml;windows\pages\SettingsWindowPages\GraphicSettingsPage.xaml;windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml;windows\pages\ShopWindowPages\RealMoneyPage.xaml;windows\pages\WelcomeWindowPages\InstructionPage.xaml;windows\pages\WelcomeWindowPages\LicencePage.xaml;windows\pages\WelcomeWindowPages\MainPage.xaml;windows\pages\WelcomeWindowPages\ScorePage.xaml;windows\Settings.xaml;windows\Shop.xaml;windows\Welcome.xaml;
 
-False
+True
 
