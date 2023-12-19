@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\localhost\source\repos\GameofKingdom\App.xaml
-1473075380
+1398035864
 
-21-1449054300
+20-1926058612
 1951422256898
-windows\Main.xaml;windows\pages\MainWindowPages\GamePage.xaml;windows\pages\MainWindowPages\LogInPage.xaml;windows\pages\SettingsWindowPages\GameSettingsPage.xaml;windows\pages\SettingsWindowPages\GraphicSettingsPage.xaml;windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml;windows\pages\ShopWindowPages\RealMoneyPage.xaml;windows\pages\WelcomeWindowPages\InstructionPage.xaml;windows\pages\WelcomeWindowPages\LicencePage.xaml;windows\pages\WelcomeWindowPages\MainPage.xaml;windows\pages\WelcomeWindowPages\ScorePage.xaml;windows\Settings.xaml;windows\Shop.xaml;windows\Welcome.xaml;
+windows\Main.xaml;windows\pages\FreePageComponents\SettingsNavigation.xaml;windows\pages\MainWindowPages\GamePage.xaml;windows\pages\MainWindowPages\LogInPage.xaml;windows\pages\SettingsWindowPages\GameSettingsPage.xaml;windows\pages\SettingsWindowPages\GraphicSettingsPage.xaml;windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml;windows\pages\WelcomeWindowPages\InstructionPage.xaml;windows\pages\WelcomeWindowPages\LicencePage.xaml;windows\pages\WelcomeWindowPages\MainPage.xaml;windows\pages\WelcomeWindowPages\ScorePage.xaml;windows\Settings.xaml;windows\Welcome.xaml;
 
 True
 

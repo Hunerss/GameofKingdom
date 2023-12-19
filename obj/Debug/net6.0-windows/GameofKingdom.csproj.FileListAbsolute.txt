@@ -5,14 +5,12 @@ C:\Users\localhost\source\repos\GameofKingdom\bin\Debug\net6.0-windows\GameofKin
 C:\Users\localhost\source\repos\GameofKingdom\bin\Debug\net6.0-windows\GameofKingdom.pdb
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Main.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Settings.g.cs
-C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Shop.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Welcome.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\GameofKingdom_MarkupCompile.cache
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\GameofKingdom_MarkupCompile.lref
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Main.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Settings.baml
-C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Shop.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\Welcome.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\GameofKingdom.g.resources
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\GameofKingdom.GeneratedMSBuildEditorConfig.editorconfig
@@ -32,7 +30,6 @@ C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\p
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\GameSettingsPage.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\GraphicSettingsPage.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\LanguageSettingsPage.g.cs
-C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\ShopWindowPages\RealMoneyPage.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\WelcomeWindowPages\InstructionPage.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\WelcomeWindowPages\LicencePage.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\WelcomeWindowPages\MainPage.g.cs
@@ -42,7 +39,6 @@ C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\p
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\GameSettingsPage.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\GraphicSettingsPage.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\LanguageSettingsPage.baml
-C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\ShopWindowPages\RealMoneyPage.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\WelcomeWindowPages\InstructionPage.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\WelcomeWindowPages\LicencePage.baml
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\WelcomeWindowPages\MainPage.baml
@@ -96,3 +92,5 @@ C:\Users\11344\Source\Repos\GameofKingdom\obj\Debug\net6.0-windows\refint\Gameof
 C:\Users\11344\Source\Repos\GameofKingdom\obj\Debug\net6.0-windows\GameofKingdom.pdb
 C:\Users\11344\Source\Repos\GameofKingdom\obj\Debug\net6.0-windows\GameofKingdom.genruntimeconfig.cache
 C:\Users\11344\Source\Repos\GameofKingdom\obj\Debug\net6.0-windows\ref\GameofKingdom.dll
+C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\FreePageComponents\SettingsNavigation.g.cs
+C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\FreePageComponents\SettingsNavigation.baml

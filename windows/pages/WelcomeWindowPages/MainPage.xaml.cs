@@ -56,7 +56,8 @@ namespace GameofKingdom.windows
                                 break;
                             case "btn_4":
                                 Console.WriteLine("Moving to Shop window");
-                                win = new Shop();
+                                Console.WriteLine("Error");
+                                // win = new Shop();
                                 break;
                             case "btn_5":
                                 Console.WriteLine("Moving to Settings window");

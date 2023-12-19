@@ -61,7 +61,7 @@ namespace GameofKingdom.windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GameofKingdom;V1.0.0.0;component/windows/main.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GameofKingdom;component/windows/main.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\windows\Main.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

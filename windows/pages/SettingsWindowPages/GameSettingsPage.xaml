@@ -11,28 +11,32 @@
             <ColumnDefinition Width="125"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0">
+        <Frame Grid.Column="0" x:Name="frame" NavigationUIVisibility="Hidden"/>
+        <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <TextBlock  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" TextWrapping="Wrap">Ustawienia</TextBlock>
-            <Button Name="btn_1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Navigation">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" TextWrapping="Wrap">Graficzne</TextBlock>
-            </Button>
-            <Button Name="btn_2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Navigation">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" TextWrapping="Wrap">Językowe</TextBlock>
-            </Button>
-            <Button Name="btn_3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Navigation">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" TextWrapping="Wrap">Gry</TextBlock>
-            </Button>
-            <Button Name="btn_4" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Navigation">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" TextWrapping="Wrap">Menu</TextBlock>
-            </Button>
+            <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Text="Ustawienia Gry"/>
+            <DockPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text=""/>
+                <ComboBox Name="themes" Width="150" Height="30" FontSize="16" FontWeight="Bold"></ComboBox>
+            </DockPanel>
+            <DockPanel Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text=""/>
+                <ComboBox Name="eventsGraphic" Width="150" Height="30" FontSize="16" FontWeight="Bold"></ComboBox>
+            </DockPanel>
+            <DockPanel Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text=""/>
+                <ComboBox Name="gameGraphic" Width="150" Height="30" FontSize="16" FontWeight="Bold"></ComboBox>
+            </DockPanel>
         </Grid>
-        <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Text="Ustawienia Gry"/>
     </Grid>
 </UserControl>

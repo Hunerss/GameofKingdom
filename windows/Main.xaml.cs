@@ -22,10 +22,22 @@ namespace GameofKingdom.windows
     /// </summary>
     public partial class Main : Window
     {
+
+        private static int resolution = 0;
+
         public Main()
         {
             InitializeComponent();
             Basic.NavigateTo(frame, new LogInPage(this));
+            Basic.SetResolution(resolution, this);
+        }
+
+        public Main(int res)
+        {
+            InitializeComponent();
+            Basic.NavigateTo(frame, new LogInPage(this));
+            resolution = res;
+            Basic.SetResolution(resolution, this);
         }
     }
 }
