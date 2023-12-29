@@ -28,6 +28,9 @@
     <Compile Update="windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="windows\pages\SettingsWindowPages\MainSettingsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="windows\pages\WelcomeWindowPages\InstructionPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -48,6 +51,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="rescources\languages\English.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="rescources\languages\Polish.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="rescources\languages\Russian.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="windows\Main.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -67,6 +79,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windows\pages\SettingsWindowPages\MainSettingsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\pages\WelcomeWindowPages\InstructionPage.xaml">

@@ -74,6 +74,7 @@ namespace GameofKingdom.windows
                             case "btn_8":
                                 Console.WriteLine("Closing the application");
                                 Window.GetWindow(this).Close();
+                                Application.Current.Shutdown();
                                 break;
                             default:
                                 break;

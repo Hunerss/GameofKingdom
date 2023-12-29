@@ -94,3 +94,8 @@ C:\Users\11344\Source\Repos\GameofKingdom\obj\Debug\net6.0-windows\GameofKingdom
 C:\Users\11344\Source\Repos\GameofKingdom\obj\Debug\net6.0-windows\ref\GameofKingdom.dll
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\FreePageComponents\SettingsNavigation.g.cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\FreePageComponents\SettingsNavigation.baml
+C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\MainSettingsPage.g.cs
+C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\windows\pages\SettingsWindowPages\MainSettingsPage.baml
+C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\rescources\languages\English.baml
+C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\rescources\languages\Polish.baml
+C:\Users\localhost\source\repos\GameofKingdom\obj\Debug\net6.0-windows\rescources\languages\Russian.baml

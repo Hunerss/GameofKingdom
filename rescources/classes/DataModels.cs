@@ -25,4 +25,13 @@ namespace GameofKingdom.rescources.classes
 
         public Boolean Licence { get; set; }
     }
+
+    class SettingsModel
+    {
+        public int Language { get; set; }
+
+        public int Resolution { get; set; }
+
+        public bool EventAnimation { get; set; }
+    }
 }

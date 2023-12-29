@@ -1,4 +1,5 @@
 ﻿using GameofKingdom.rescources.classes;
+using GameofKingdom.windows.pages.SettingsWindowPages;
 using GameofKingdom.windows.tmp.SettingsWindowPages;
 using System;
 using System.Collections.Generic;
@@ -21,22 +22,11 @@ namespace GameofKingdom.windows
     /// </summary>
     public partial class Settings : Window
     {
-
-        private static int resolution = 0;
-
         public Settings()
         {
             InitializeComponent();
-            Basic.NavigateTo(frame, new GraphicSettingsPage(this));
-            Basic.SetResolution(resolution, this);
-        }
-
-        public Settings(int res)
-        {
-            InitializeComponent();
-            Basic.NavigateTo(frame, new GraphicSettingsPage(this));
-            resolution = res;
-            Basic.SetResolution(resolution, this);
+            Basic.NavigateTo(frame, new MainSettingsPage(this));
+            Basic.ApplySettings(this);
         }
     }
 }

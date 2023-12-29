@@ -8,10 +8,11 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Title="GameOfKingdom" Height="450" Width="800">
-    <Grid>
+    <Grid Name="main">
         <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
+
         <Grid.Background>
-            <ImageBrush ImageSource="\images\background_image.jpg" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="\images\background_0.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
     </Grid>
 </Window>

@@ -3,22 +3,6 @@
 Nowe
 
 	Okna
-		Settings
-			Ustawienia graficzne
-			Ustawienia językowe
-			Ustawienia gry
-				Szybkość gry
-					Ile jednostek czasu podaje po każdym wyborze
-				Bazowe zasaoby (poziom trudności)
-					Łatwy prawie pełne paski 
-								||
-							    \/
-					Bardzo trudny prawie puste paski
-				Kalkulator ustawionego poziomu trudności
-					Wartości liczbowe: Łatwy = 1 | Średni = 2 | Trudny = 3 | Bardzo trundy = 4
-					Obliczanie ({Szybkość gry} + {Bazowe zasoby})/2 potem zaokrąglamy w górę i określamy poziom trudności
-					Poziom trudności jest mnożnikiem wyniku przed wpisaniem go do pliku json
-			Dynamiczna nawigacja +
 		Main
 			Nakładka "logowani"
 				Pozwala na wpisanie nazwy użytkownika innej niż "", "Admin", "admin", inne wariacje admina oraz obraźliwe słowa 
@@ -73,3 +57,19 @@ Zrealizowane
 		Instruction
 			Opis jak grać oraz co robią poszczególne rzeczy 
 				Proste jak budowa cepa
+		Settings
+			Ustawienia graficzne
+			Ustawienia językowe
+			Ustawienia gry
+				Szybkość gry
+					Ile jednostek czasu podaje po każdym wyborze
+				Bazowe zasaoby (poziom trudności)
+					Łatwy prawie pełne paski 
+								||
+							    \/
+					Bardzo trudny prawie puste paski
+				Kalkulator ustawionego poziomu trudności
+					Wartości liczbowe: Łatwy = 1 | Średni = 2 | Trudny = 3 | Bardzo trundy = 4
+					Obliczanie ({Szybkość gry} + {Bazowe zasoby})/2 potem zaokrąglamy w górę i określamy poziom trudności
+					Poziom trudności jest mnożnikiem wyniku przed wpisaniem go do pliku json
+			Dynamiczna nawigacja +

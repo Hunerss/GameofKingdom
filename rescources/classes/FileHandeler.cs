@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace GameofKingdom.rescources.classes
         private static string GameDataDirectory = @"C:\ProgramData\GameOfKingdom";
         private static string LicenceFilePath = @"C:\ProgramData\GameOfKingdom\LicenceAgreement.json";
         private static string ScoresPath = @"C:\ProgramData\GameOfKingdom\Scores.json";
+        private static string SettingsPath = @"C:\ProgramData\GameOfKingdom\Settings.json";
 
         public static Boolean CheckFile(Boolean repetitive)
         {
@@ -81,6 +83,62 @@ namespace GameofKingdom.rescources.classes
                 File.WriteAllText(LicenceFilePath, licence);
             else
                 Console.WriteLine("WriteLicence - error log - licence string is null");
+        }
+
+        public static Boolean CheckSettingsFile()
+        {
+            if(File.Exists(SettingsPath))
+                return true;
+            else
+            {
+                CreateBasicSettings();
+                return false;
+            }
+        }
+
+        private static void CreateBasicSettings()
+        {
+            List<SettingsModel> settings = new();
+            settings.Add(new SettingsModel()
+            {
+                Language = 0,
+                Resolution = 0,
+                EventAnimation = true
+            });
+
+            string settingsSerialized = JsonSerializer.Serialize(settings);
+            File.WriteAllText(SettingsPath,settingsSerialized);
+        }
+
+
+        public static void OverrideSettings(int language, int resolution, bool animation)
+        {
+            if (File.Exists(SettingsPath))
+            {
+                List<SettingsModel> settings = new();
+                settings.Add(new SettingsModel()
+                {
+                    Language = language,
+                    Resolution = resolution,
+                    EventAnimation = animation
+                });
+
+                string settingsSerialized = JsonSerializer.Serialize(settings);
+                File.WriteAllText(SettingsPath, settingsSerialized);
+            }
+        }
+
+
+        public static string ReturnPath(int pathId)
+        {
+            if (pathId == 0)
+                return LicenceFilePath;
+            else if (pathId == 1)
+                return ScoresPath;
+            else if (pathId == 2)
+                return SettingsPath;
+            Console.WriteLine("RetrunPath - errror log - path id doesn't exist");
+            return "Error";
         }
 
         public static Boolean CheckScore(int score, string name)
