@@ -32,7 +32,7 @@ namespace GameofKingdom.windows
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Navigation(object sender, RoutedEventArgs e)
         {
             string btn_name = Basic.ReturnName(sender);
             switch (btn_name.Length)

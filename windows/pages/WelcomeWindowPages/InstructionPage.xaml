@@ -15,8 +15,11 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Instrukcja</TextBlock>
-        <ScrollViewer Grid.Row="2">
-            <TextBlock TextWrapping="Wrap" Margin="25">
+        <ScrollViewer Grid.Row="2" BorderThickness="0">
+            <TextBlock TextWrapping="Wrap" Margin="15" Padding="5">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Gray" Opacity="0.5"/>
+                </TextBlock.Background>
                 Instrukcja do Gry "Game of Kingdom":<LineBreak/><LineBreak/>
                 "Game of Kingdom" to prosta, lecz fascynująca gra karciano-strategiczna, w której gracze podejmują decyzje w losowo generowanych zdarzeniach. Gra polega na utrzymaniu równowagi w państwie poprzez mądre wybory i zarządzanie zasobami.<LineBreak/>
                 Zasady gry:<LineBreak/><LineBreak/>

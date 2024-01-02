@@ -1,0 +1,862 @@
+﻿[
+  {
+    "id": "00",
+    "name": "Wieczny głód",
+    "description": "Brak żywności trwa już tak długo, że poddani umierają próbując zdobyć choć kromkę chleba dla swoich dzieci. Co zrobisz?",
+    "option_1": {
+      "text": "Otwórzmy Królewski skarbiec i zakupmy dużo żywności dla poddanych",
+      "description": "W ostatnim momencie udało ci się kupić wystarczająco żywności, żeby poddani mogli dożyć zbiorów, przez co państwo ocalało.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 10
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wyślijmy armię, żeby splądrować sąsiadów i zapewnić sobie więcej żywności",
+      "description": "Długi i krwawy najazd zapewnił twojemu państwu wystarczająco żywności do zbiorów.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 5
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Jeśli nie mają chelba, to niech zjedzą ciasto",
+      "description": "Głód zabił większość populacji twojego państwa, ci którzy nie zgineli uciekli, a Ty jak nędzna poczwara, którą jesteś zginąłeś z głodu, po zjedzeniu swojego ostatniego wiernego sługi.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "01",
+    "name": "Klęska urodzaju",
+    "description": "Długie lata urodzaju sprawiły, że ludzie nie chcą pracować, wiedząc, że i tak pola i sady obrodzą żywnością. Jakie działania podejmiesz?",
+    "option_1": {
+      "text": "Skonfiskuj i sprzedaj większość zapasów żywności, żeby siłowo zmotywować ludzi do pracy",
+      "description": "Ludzie są źli, niektórzy stracili całe majątki, ale chęć do pracy czy raczej strach przed zimą sprawił, że pola znowu są obrabiane.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -10
+        },
+        {
+          "resource": "Money",
+          "value": 10
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wyślijmy armię, żeby przebrana za najeźdźców spaliła zapasy żywności",
+      "description": "Ludzie przerażenie o swoje losy po tym strasznym ataku szybko wrócili do pracy.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -10
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Moi poddani podobnie jak ja powinni móc odpocząC!",
+      "description": "Tego roku pola nie obrodziły, a można wręcz powiedzieć, że był to nieurodzaj stulecia. Omamieni przez głód i zabobonny strach ludzie spalili cię na stosie, za złe rządzenie.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "02",
+    "name": "Dziura w skarbcy",
+    "description": "Nierozważna polityka finansowa sprawiła, że skarbiec jest pusty, a poddani zaczynają to dostrzegać. Jakie działania podejmiesz?",
+    "option_1": {
+      "text": "Wprowadź nowe podatki, żeby załatać dziurę w budżecie",
+      "description": "Ludzie jak zawsze stawiali opór, ale po pewnym czasie dali sobie spokój.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 10
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 5
+        },
+        {
+          "resource": "People",
+          "value": -5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wyślij siły specjalne, żeby napaść na kilka bogatych karawan i tak pozyskać dodatkowe środki",
+      "description": "Kupcy nie spodziewali się ataku od bandytów w górach, a twoje wojska wróciły z licznymi kosztownościami.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 10
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Wolny rynek to wyreguluje i skarbiec jak nic sam się napełni",
+      "description": "Skarbiec się nie napełnił, a państwo zbankrutowało co zakończyło się dla ciebie wymuszoną przez nową, kupiecą elite abdykacją.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "03",
+    "name": "Rozkwit sztuki",
+    "description": "Pieniądze wylewają się ze skarbca, ludzie nieustannie się bogacą, a sztuka rozkwita, ale czujesz, że coś jest nie tak. Co chcesz z tym zrobić?",
+    "option_1": {
+      "text": "Zakaż rozwoju zbyt nowych i radykalnych form sztuki",
+      "description": "Sam zakaz mało dał, ale łapówki dla krytyków pozwolily zachamować gwałtowny rozwój, a sponsoży artystów stracili przez to swoje majątki.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Rozkaż armii zabić nie wygodnych artystów i zniszczyć ich dzieła",
+      "description": "Ludzie są wściekli, ale armia skutecznie zwalczyła sztukę, artystów i buntowników.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Jako koneser sztuki, pozwalam im tworzyć ile ich arytstyczna dusza tego pragnie",
+      "description": "Rozwój formy i treści szybko wymknął się z pod kontroli, co doprowadziło w końcu do zmiany sztuki w gorszące akty, a ostatnim, który widzialeś było obcięci ci głowy i wsadzenie jej do twojego otwartego brzucha.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "04",
+    "name": "Porażka militarna",
+    "description": "Twoji sąsiedzi dostrzegli słabość twojej armi i przypuścili nie spodziewany atak. Jak zareagujesz?",
+    "option_1": {
+      "text": "Przeprowadź gwałtowny pobór i zalej ich ciałami",
+      "description": "Setki nie winnych ludzi zgineło w samobójczych atakach, ale przeciwnicy zostali odparci.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 10
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wynajmij kosztownych najemników",
+      "description": "Drogie wojska najemne pozowliły ci odeprzeć atak wrogów.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -5
+        },
+        {
+          "resource": "Army",
+          "value": 10
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Niech wezmą sobie trochę tych bezużytecznych terenów, mój następca będzie musiał je po prostu odzyskać",
+      "description": "Ku twojemu zdziwieniu wroga armia zatrzymała się w twojej stolicy i opuścili ją z twoją głową na włóczni i pełnym zwycięstwem.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "05",
+    "name": "Przewrót wojskowy",
+    "description": "Potężna armia mająca kontrolę nad większością kraju postanowiła zmienić większość na całość. Jak na to zareagujesz?",
+    "option_1": {
+      "text": "Spróbuj przekupić dowdców po przez pójście na liczne usępstwa",
+      "description": "Dowdócy zaczeli walczyć między sobą o nowe przywileje przez co wyływ armii, a pozostali przystali na twoją popozycję.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -10
+        },
+        {
+          "resource": "Control",
+          "value": -5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wynajmij najemników do walki w tej wojnie domowej",
+      "description": "Zorganizowani najemnicy i bardzo skuteczni zabójcy przywrócili ci władzę nad armią, oczywiście za odpowiednią cenę.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": -10
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Na pewno ich głupia rebelia rozpadnie się, zanim dotrą do stolicy",
+      "description": "Myliłeś się, dotarli do stolicy, zchwytali cię i ceremonialnie spóścili z ciebie krew krzycząć: 'Krew dla Boga Krwi'.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "06",
+    "name": "Utrata kontroli",
+    "description": "Liczne ustępstwa dla lokalnych rządców, sejmu i szlachty sprawiły, że nie masz już prawie władzy w państwie",
+    "option_1": {
+      "text": "Przeporwadź radykalną reformę odzyskując trochę władzy",
+      "description": "Zanim ktokolwiek się zorientował liczne dziury w ustawach i dekretach pozwoliły ci odzyskać twoją prawowitą władze.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 10
+        },
+        {
+          "resource": "People",
+          "value": -5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zniszcz sejm, zabij szlachtę, a rządców wymień",
+      "description": "Szybka i krwawa operacja wojskowa zapobiegła buntowi lub innym niebezpiecznym konsekwencją.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 20
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "W końcu! Nareszcie mogę pojechać na wakacje",
+      "description": "Pojechałeś na dożywitnie wakacje w małym neutralnym państwie na południu, a w tym czasie państwo zmieniło się w republike i zfederalizowało.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "07",
+    "name": "l'état, c'est moi",
+    "description": "Osiągłąłeś władzę absolutną, jesteś Bogiem swojego państwa, decydujesz o każdym aspekcie życia i śmierci poddnaych, brawo udało ci się!",
+    "option_1": {
+      "text": "disabled",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "disabled",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "disabled",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "09",
+    "name": "Przeludnienie",
+    "description": "Twoich poddanych jest po prostu za dużo, przez co twoje tereny nie są w stanie ich wyżywić",
+    "option_1": {
+      "text": "Spróbuj podsycić nastroje kolonialne",
+      "description": "Twoi liczni poddani poczuli chęć eksploracji świata i osiedlenia się w nowym miejscu, dużo z nich przez to wyemigrowało to twoich zamorskich koloni.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -5
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -10
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Przeporwadź pobór i idź na wojnę",
+      "description": "Wojna pochłoneła liczne życia, rozwiązując ten problem i zwiększając twoją potęge militarną.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -10
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Więcej poddanych to więcej podatków, więc niech się mnożą jeszcze szybciej",
+      "description": "Przeludnienie eskalowało do takiego stopnia, że państwo absurdalnie zubożało, co doprowadziło do niepokoji i rewolucji oraz twojego zcięcia.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "Koniec czasu",
+    "description": "Twój czas na tej ziemi się skończył, czy byłeś dobrym władcą, tego nikt nie wie, ale dożyłeś starości i na łożu śmierci przekazałeś władzę swojemu niezwykle zdolnemu i ambitnemu wnukowi.",
+    "option_1": {
+      "text": "disabled",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "disabled",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "disabled",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+]

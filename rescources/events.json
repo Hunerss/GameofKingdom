@@ -10,6 +10,7 @@
     "option_3": "Pozwól lokalnym zarządcą się tym zająć",
     "consequences_3": "f,0,m,0,a,0,c,-5,p,0"
   },
+  // wygeneruj mi 25 takich wydarzeń do mojej gry fantasy i zapisz je w formacie json, a o to przykład
   {
     "id": "01",
     "name": "Epidemia Czarnej Śmierci",

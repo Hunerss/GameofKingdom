@@ -45,21 +45,30 @@
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
-                    <TextBox Grid.Row="1" Width="150" Height="30" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Nazwa gracza</TextBox>
-                    <ComboBox Grid.Row="2" Name="resolution" Width="150" Height="30" FontSize="16" FontWeight="Bold">
-                        <ComboBoxItem Name="resolution_0" IsSelected="True">Bardzo Łatwy</ComboBoxItem>
-                        <ComboBoxItem Name="resolution_1">Łatwy</ComboBoxItem>
-                        <ComboBoxItem Name="resolution_2">Normalny</ComboBoxItem>
-                        <ComboBoxItem Name="resolution_3">Trudny</ComboBoxItem>
-                        <ComboBoxItem Name="resolution_4">Bardzo Trudny</ComboBoxItem>
+                    <TextBox Grid.Row="1" Width="150" Height="30" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Name="userName" TextChanged="AllowedUserName">Nazwa gracza</TextBox>
+                    <ComboBox Grid.Row="2" Name="rescourcesAmount" Width="150" Height="30" FontSize="16" FontWeight="Bold">
+                        <ComboBoxItem Name="rescourcesAmount_0" IsSelected="True">Bardzo Łatwy</ComboBoxItem>
+                        <ComboBoxItem Name="rescourcesAmount_1">Łatwy</ComboBoxItem>
+                        <ComboBoxItem Name="rescourcesAmount_2">Normalny</ComboBoxItem>
+                        <ComboBoxItem Name="rescourcesAmount_3">Trudny</ComboBoxItem>
+                        <ComboBoxItem Name="rescourcesAmount_4">Bardzo Trudny</ComboBoxItem>
                     </ComboBox>
-                    <ComboBox Grid.Row="3" Name="eventAnimation" Width="150" Height="30" FontSize="16" FontWeight="Bold">
-                        <ComboBoxItem Name="eventAnimation_1" IsSelected="True">Wyłączne</ComboBoxItem>
-                        <ComboBoxItem Name="eventAnimation_0">Wyłączone</ComboBoxItem>
+                    <ComboBox Grid.Row="3" Name="gameSpeed" Width="150" Height="30" FontSize="16" FontWeight="Bold">
+                        <ComboBoxItem Name="speed_0" IsSelected="True">Wolny</ComboBoxItem>
+                        <ComboBoxItem Name="speed_1">Normalny</ComboBoxItem>
+                        <ComboBoxItem Name="speed_2">Trudny</ComboBoxItem>
                     </ComboBox>
                 </Grid>
             </Grid>
-            <Button Grid.Row="7" FontSize="26" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Navigation">Wróć do menu i zapisz</Button>
+            <Grid Grid.Row="7">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" FontSize="26" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Navigation">Wróć do menu</Button>
+                <Button Grid.Column="1" FontSize="26" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Click="StartGame">Rozpocznij grę</Button>
+            </Grid>
         </Grid>
     </Grid>
 </UserControl>

@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace GameofKingdom.windows.pages.MainWindowPages
 {
@@ -23,10 +12,35 @@ namespace GameofKingdom.windows.pages.MainWindowPages
 
         private static Main window;
 
-        public GamePage(Main main)
+        private static string UserName;
+        private static int BaseRescources;
+        private static int GameSpeed;
+
+        private static Boolean check;
+
+        public GamePage(Main main, string name, int resc, int speed)
         {
             window = main;
+            UserName = name;
+            BaseRescources = resc;
+            GameSpeed = speed;
             InitializeComponent();
+        }
+
+        private void Navigation(object sender, RoutedEventArgs e)
+        {
+            if (!check)
+            {
+                MessageBox.Show("Czy jesteś tego pewien?");
+                check = true;
+            }
+            else
+            {
+                Welcome win = new();
+                win.Show();
+                window.Close();
+            }
+
         }
     }
 }

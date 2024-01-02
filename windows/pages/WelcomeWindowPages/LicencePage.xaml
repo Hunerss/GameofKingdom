@@ -17,7 +17,10 @@
         </Grid.RowDefinitions>
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Licencyjna Użytkowania</TextBlock>
         <ScrollViewer Grid.Row="2">
-            <TextBlock TextWrapping="Wrap" Margin="25">
+            <TextBlock TextWrapping="Wrap" Margin="15" Padding="5">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Gray" Opacity="0.5"/>
+                </TextBlock.Background>
                 Licencja Użytkowania Gry <LineBreak/><LineBreak/>
 	                1. ZAKRES LICENCJI <LineBreak/><LineBreak/>
 		                Niniejsza umowa licencyjna obejmuje grę komputerową "Game of Kingdom", wraz z wszelkimi materiałami towarzyszącymi, oprogramowaniem, aktualizacjami, dodatkami i wszelkimi dostarczanymi treściami (zwane dalej „Grą”). Grę dostarcza [nazwa firmy lub dewelopera] (zwane dalej „Dostawca”).<LineBreak/>

@@ -34,10 +34,6 @@ namespace GameofKingdom.windows.pages.SettingsWindowPages
                     SettingsModel settings = settingsList[0];
                     language.SelectedIndex = settings.Language;
                     resolution.SelectedIndex = settings.Resolution;
-                    if (settings.EventAnimation)
-                        eventAnimation.SelectedIndex = 0;
-                    else
-                        eventAnimation.SelectedIndex = 1;
                 }
                 else
                     Console.WriteLine("ApplySettings - error log - failed to read settings json");
@@ -53,10 +49,8 @@ namespace GameofKingdom.windows.pages.SettingsWindowPages
         private void Navigation(object sender, RoutedEventArgs e)
         {
             int selected_resolution;
-            bool selected_animation;
             string cbx_language = ((ComboBoxItem)language.SelectedItem).Name;
             string cbx_resolution = ((ComboBoxItem)resolution.SelectedItem).Name;
-            string cbx_animation = ((ComboBoxItem)eventAnimation.SelectedItem).Name;
             int selected_language = Convert.ToInt32(cbx_language[9].ToString());
 
             if (cbx_resolution[11].ToString() == "X")
@@ -64,14 +58,9 @@ namespace GameofKingdom.windows.pages.SettingsWindowPages
             else
                 selected_resolution = Convert.ToInt32(cbx_resolution[11].ToString());
 
-            if (cbx_animation[15]=='1')
-                selected_animation = true;
-            else
-                selected_animation = false;
+            Console.WriteLine("New settings values: " + selected_language + " " + selected_resolution);
 
-            Console.WriteLine("New settings values: " + selected_language + " " + selected_resolution + " " + selected_animation);
-
-            FileHandeler.OverrideSettings(selected_language, selected_resolution, selected_animation);
+            FileHandeler.OverrideSettings(selected_language, selected_resolution);
             Welcome win = new();
             win.Show();
             window.Close();

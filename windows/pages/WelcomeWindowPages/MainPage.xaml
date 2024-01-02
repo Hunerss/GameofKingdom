@@ -29,10 +29,10 @@
                     <RowDefinition Height="2*"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <Button Name="btn_1" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Graj" Click="Button_Click"/>
-                <Button Name="btn_2" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Score" Click="Button_Click"/>
-                <Button Name="btn_3" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Instrukcja" Click="Button_Click"/>
-                <Button IsEnabled="False" Name="btn_4" Grid.Row="3" Width="200" Height="75" FontSize="32" Content="Sklep" Click="Button_Click"/>
+                <Button Name="btn_1" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Graj" Click="Navigation"/>
+                <Button Name="btn_2" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Score" Click="Navigation"/>
+                <Button Name="btn_3" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Instrukcja" Click="Navigation"/>
+                <Button IsEnabled="False" Name="btn_4" Grid.Row="3" Width="200" Height="75" FontSize="32" Content="Sklep" Click="Navigation"/>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
@@ -41,10 +41,10 @@
                     <RowDefinition Height="2*"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <Button Name="btn_5" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Opcje" Click="Button_Click"/>
-                <Button Name="btn_6" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Licencja" Click="Button_Click"/>
-                <Button Name="btn_7" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Zrestartuj" Click="Button_Click"/>
-                <Button Name="btn_8" Grid.Row="3" Width="200" Height="75" FontSize="32" Content="Wyjdź" Click="Button_Click"/>
+                <Button Name="btn_5" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Opcje" Click="Navigation"/>
+                <Button Name="btn_6" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Licencja" Click="Navigation"/>
+                <Button Name="btn_7" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Zrestartuj" Click="Navigation"/>
+                <Button Name="btn_8" Grid.Row="3" Width="200" Height="75" FontSize="32" Content="Wyjdź" Click="Navigation"/>
             </Grid>
         </Grid>
     </Grid>

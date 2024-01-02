@@ -185,32 +185,5 @@ namespace GameofKingdom.rescources.classes
                 Application.Current.Shutdown();
             }
         }
-
-        public static Boolean ApplySettingsInGame(Window win)
-        {
-            // stage is infromation about which stage of applaying setting do we want to achive - 0 = basic one, 1 = event animations, 2 = all of it - insta game run
-            if (FileHandeler.CheckSettingsFile())
-            {
-                string loadedJson = File.ReadAllText(FileHandeler.ReturnPath(2));
-                if (!string.IsNullOrEmpty(loadedJson))
-                {
-                    Console.WriteLine("ApplySettings - middle log - settings json exist and isn't null or empty");
-                    SettingsModel settings = JsonSerializer.Deserialize<SettingsModel>(loadedJson);
-
-                    SetLanguage(settings.Language);
-                    SetResolution(settings.Resolution, win);
-                    return settings.EventAnimation;
-                }
-                else
-                    return false;
-            }
-            else
-            {
-                Console.WriteLine("ApplayingSettings - error log - cirtical error, closing the game");
-                MessageBox.Show("Coś poszło nie tak, zamykanie aplikacji. Przepraszamy za utrudnienia");
-                Application.Current.Shutdown();
-                return false;
-            }
-        }
     }
 }

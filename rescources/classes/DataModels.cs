@@ -31,7 +31,5 @@ namespace GameofKingdom.rescources.classes
         public int Language { get; set; }
 
         public int Resolution { get; set; }
-
-        public bool EventAnimation { get; set; }
     }
 }

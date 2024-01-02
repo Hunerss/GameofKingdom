@@ -102,8 +102,7 @@ namespace GameofKingdom.rescources.classes
             settings.Add(new SettingsModel()
             {
                 Language = 0,
-                Resolution = 0,
-                EventAnimation = true
+                Resolution = 0
             });
 
             string settingsSerialized = JsonSerializer.Serialize(settings);
@@ -111,7 +110,7 @@ namespace GameofKingdom.rescources.classes
         }
 
 
-        public static void OverrideSettings(int language, int resolution, bool animation)
+        public static void OverrideSettings(int language, int resolution)
         {
             if (File.Exists(SettingsPath))
             {
@@ -119,8 +118,7 @@ namespace GameofKingdom.rescources.classes
                 settings.Add(new SettingsModel()
                 {
                     Language = language,
-                    Resolution = resolution,
-                    EventAnimation = animation
+                    Resolution = resolution
                 });
 
                 string settingsSerialized = JsonSerializer.Serialize(settings);
