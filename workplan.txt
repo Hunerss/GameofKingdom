@@ -4,31 +4,16 @@ Nowe
 
 	Okna
 		Main
-			Nakładka "logowani"
-				Pozwala na wpisanie nazwy użytkownika innej niż "", "Admin", "admin", inne wariacje admina oraz obraźliwe słowa 
-				Dodaje ten login do zmiennej lokalnej
 			Paski zasobów
-				Po najechaniu na nie myszką pokazują cyfrowo jaki jest stan danego zasobu np.: Food 1/100
-				Po przekroczeniu progów zmieniają kolory
-					< 25 na czerwony
-					> 75 na zielony
-					pozostałe na szere
+				Po najechaniu na nie myszką pokazują cyfrowo jaki jest stan danego zasobu np.: Food 1/100 - WSTRZYMANE
 				Funkcja, która sprawdza stan zasobów po każdej decyzji oraz jeśli, któryś z nich spełnia wymogi do specjalnego wydarzenia odpala je zamiast losowego
 			Menu zdarzeń
 				*Aminowanie wprowadza kartę na stół - od góry karta pokrywa obecną, a tamta jest usuwana, gdy zostanie nakryta
-				Na dole karty są 3 przyciski które odpowiadają 3 wyborą
 				każdy event jest generowany losowo chyba, że spełnia wymogi na event główny lub krytyczny (patrz Paski zasobów 4)
-			Przyciski
-				Po kliknięciu przenosi do określonej lokacji
-					Abdykuj - przegrywasz
-					Sklep - logiczne
-					{nie ma opcji na zapisanie gry, przy wyjściu w normalny sposób gra jest uznana za porażkę}
 Popraw	
 
 Przerób
-
 	Wygląd wszystkich okien - obecna wersja jest do niczego
-	Podział na "okna" i "strony" w celu redukcji ilości zbędnych, zasobo żernych okien +
 	Przyciski, bo wyglądają jak gówno
 
 Napraw
@@ -41,8 +26,25 @@ Usunięte/Porzucone
 				Pozwala dokupić bonusy na "realną" kasę
 
 Zrealizowane
+	Podział na "okna" i "strony" w celu redukcji ilości zbędnych, zasobo żernych okien +
 
 	Okna
+		Main
+			Nakładka "logowani"
+				Pozwala na wpisanie nazwy użytkownika innej niż "", "Admin", "admin", inne wariacje admina oraz obraźliwe słowa 
+				Dodaje ten login do zmiennej lokalnej
+			Paski zasobów
+				Po przekroczeniu progów zmieniają kolory
+					< 25 na czerwony
+					> 75 na zielony
+					pozostałe na szere
+			Przyciski
+				Po kliknięciu przenosi do określonej lokacji
+					Abdykuj - przegrywasz
+					Sklep - logiczne
+					{nie ma opcji na zapisanie gry, przy wyjściu w normalny sposób gra jest uznana za porażkę}
+			Menu zdarzeń
+				Na dole karty są 3 przyciski które odpowiadają 3 wyborą
 		Licence
 			Automatycznie odpalasz, jeśli nie ma plików w systemie +
 				Sprawdzasz czy są pliki +

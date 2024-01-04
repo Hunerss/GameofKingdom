@@ -33,9 +33,15 @@
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" Grid.RowSpan="4">
+                        <Grid.Background>
+                            <SolidColorBrush Color="Gray" Opacity="0.5"/>
+                        </Grid.Background>
+                    </Grid>
                     <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Nazwa Gracza"/>
-                    <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Startowe Zasoby"/>
+                    <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Dynamika Zasobów"/>
                     <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Szybkość Gry"/>
+                    <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Poziom trudności"/>
                 </Grid>
                 <Grid Grid.Column="2">
                     <Grid.RowDefinitions>
@@ -45,19 +51,30 @@
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" Grid.RowSpan="4">
+                        <Grid.Background>
+                            <SolidColorBrush Color="Gray" Opacity="0.5"/>
+                        </Grid.Background>
+                    </Grid>
+                    <Grid Grid.Row="4">
+                        <Grid.Background>
+                            <SolidColorBrush Color="Gray"/>
+                        </Grid.Background>
+                    </Grid>
                     <TextBox Grid.Row="1" Width="150" Height="30" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Name="userName" TextChanged="AllowedUserName">Nazwa gracza</TextBox>
-                    <ComboBox Grid.Row="2" Name="rescourcesAmount" Width="150" Height="30" FontSize="16" FontWeight="Bold">
+                    <ComboBox Grid.Row="2" Name="rescourcesAmount" Width="150" Height="30" FontSize="16" FontWeight="Bold" SelectionChanged="ComboBoxChanged">
                         <ComboBoxItem Name="rescourcesAmount_0" IsSelected="True">Bardzo Łatwy</ComboBoxItem>
                         <ComboBoxItem Name="rescourcesAmount_1">Łatwy</ComboBoxItem>
                         <ComboBoxItem Name="rescourcesAmount_2">Normalny</ComboBoxItem>
                         <ComboBoxItem Name="rescourcesAmount_3">Trudny</ComboBoxItem>
                         <ComboBoxItem Name="rescourcesAmount_4">Bardzo Trudny</ComboBoxItem>
                     </ComboBox>
-                    <ComboBox Grid.Row="3" Name="gameSpeed" Width="150" Height="30" FontSize="16" FontWeight="Bold">
-                        <ComboBoxItem Name="speed_0" IsSelected="True">Wolny</ComboBoxItem>
-                        <ComboBoxItem Name="speed_1">Normalny</ComboBoxItem>
-                        <ComboBoxItem Name="speed_2">Trudny</ComboBoxItem>
+                    <ComboBox Grid.Row="3" Name="gameSpeed" Width="150" Height="30" FontSize="16" FontWeight="Bold"  SelectionChanged="ComboBoxChanged">
+                        <ComboBoxItem Name="speed_0" IsSelected="True">Wolna</ComboBoxItem>
+                        <ComboBoxItem Name="speed_1">Normalna</ComboBoxItem>
+                        <ComboBoxItem Name="speed_2">Szybka</ComboBoxItem>
                     </ComboBox>
+                    <TextBlock Name="gameDifficulty" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Text="Łatwy" Foreground="Green"/>
                 </Grid>
             </Grid>
             <Grid Grid.Row="7">

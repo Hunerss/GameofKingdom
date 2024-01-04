@@ -23,11 +23,14 @@ namespace GameofKingdom.windows.pages.MainWindowPages
     {
 
         private static Main window;
+        private static Boolean init = true;
 
         public LogInPage(Main main)
         {
             window = main;
+            init = true;
             InitializeComponent();
+            init = false;
         }
 
         private void StartGame(object sender, RoutedEventArgs e)
@@ -52,6 +55,7 @@ namespace GameofKingdom.windows.pages.MainWindowPages
 
         private void Navigation(object sender, RoutedEventArgs e)
         {
+            init = true;
             Welcome win = new();
             win.Show();
             window.Close();
@@ -60,6 +64,8 @@ namespace GameofKingdom.windows.pages.MainWindowPages
         private void AllowedUserName(object sender, TextChangedEventArgs e)
         {
             // "", "Admin", "admin"
+            if (!init)
+                CalculateGameDificulty();
             string name = userName.Text;
             if (name == "admin" || name == "Admin")
             {
@@ -73,6 +79,50 @@ namespace GameofKingdom.windows.pages.MainWindowPages
             string name = userName.Text;
             Console.WriteLine("CheckUserName - middle log - selected user name: " + name);
             return name != "" && name != "admin" && name != "Admin" && name != "Nazwa gracza";
+        }
+
+        private void CalculateGameDificulty()
+        {
+            if(!String.IsNullOrEmpty(((ComboBoxItem)rescourcesAmount.SelectedItem).Name) && !String.IsNullOrEmpty(((ComboBoxItem)gameSpeed.SelectedItem).Name))
+            {
+                string cbi_rescources = ((ComboBoxItem)rescourcesAmount.SelectedItem).Name;
+                string cbi_speed = ((ComboBoxItem)gameSpeed.SelectedItem).Name;
+                int rescources = Convert.ToInt32(cbi_rescources[17].ToString());
+                int speed = Convert.ToInt32(cbi_speed[6].ToString());
+
+                int difficulty = rescources + speed;
+                switch (difficulty)
+                {
+                    case 0:
+                    case 1:
+                        gameDifficulty.Text = "Łatwy";
+                        gameDifficulty.Foreground = new SolidColorBrush(Colors.Green);
+                        break;
+                    case 2:
+                    case 3:
+                        gameDifficulty.Text = "Średni";
+                        gameDifficulty.Foreground = new SolidColorBrush(Colors.Yellow);
+                        break;
+                    case 4:
+                    case 5:
+                        gameDifficulty.Text = "Trudny";
+                        gameDifficulty.Foreground = new SolidColorBrush(Colors.Red);
+                        break;
+                    case 6:
+                        gameDifficulty.Text = "B.Trudny";
+                        gameDifficulty.Foreground = new SolidColorBrush(Colors.Crimson);
+                        break;
+                    default:
+                        Console.WriteLine("LogInPage - CalculateGameDificulty - error log - dificulty value unknown");
+                        break;
+                }
+            }
+        }
+
+        private void ComboBoxChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(!init)
+                CalculateGameDificulty();
         }
     }
 }
