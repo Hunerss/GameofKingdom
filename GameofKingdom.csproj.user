@@ -7,43 +7,25 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="windows\Main.xaml.cs">
+    <Compile Update="windows\pages\GamePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="windows\pages\FreePageComponents\SettingsNavigation.xaml.cs">
+    <Compile Update="windows\pages\LogInPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="windows\pages\MainWindowPages\GamePage.xaml.cs">
+    <Compile Update="windows\pages\MainSettingsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="windows\pages\MainWindowPages\LogInPage.xaml.cs">
+    <Compile Update="windows\pages\InstructionPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="windows\pages\SettingsWindowPages\GameSettingsPage.xaml.cs">
+    <Compile Update="windows\pages\LicencePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="windows\pages\SettingsWindowPages\GraphicSettingsPage.xaml.cs">
+    <Compile Update="windows\pages\MainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="windows\pages\SettingsWindowPages\MainSettingsPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="windows\pages\WelcomeWindowPages\InstructionPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="windows\pages\WelcomeWindowPages\LicencePage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="windows\pages\WelcomeWindowPages\MainPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="windows\pages\WelcomeWindowPages\ScorePage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="windows\Settings.xaml.cs">
+    <Compile Update="windows\pages\ScorePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="windows\Welcome.xaml.cs">
@@ -60,43 +42,25 @@
     <Page Update="rescources\languages\Russian.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="windows\Main.xaml">
+    <Page Update="windows\pages\GamePage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="windows\pages\FreePageComponents\SettingsNavigation.xaml">
+    <Page Update="windows\pages\LogInPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="windows\pages\MainWindowPages\GamePage.xaml">
+    <Page Update="windows\pages\MainSettingsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="windows\pages\MainWindowPages\LogInPage.xaml">
+    <Page Update="windows\pages\InstructionPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="windows\pages\SettingsWindowPages\GameSettingsPage.xaml">
+    <Page Update="windows\pages\LicencePage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="windows\pages\SettingsWindowPages\GraphicSettingsPage.xaml">
+    <Page Update="windows\pages\MainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="windows\pages\SettingsWindowPages\LanguageSettingsPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="windows\pages\SettingsWindowPages\MainSettingsPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="windows\pages\WelcomeWindowPages\InstructionPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="windows\pages\WelcomeWindowPages\LicencePage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="windows\pages\WelcomeWindowPages\MainPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="windows\pages\WelcomeWindowPages\ScorePage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="windows\Settings.xaml">
+    <Page Update="windows\pages\ScorePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="windows\Welcome.xaml">

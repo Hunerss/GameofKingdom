@@ -1,5 +1,4 @@
 ﻿using System;
-using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -40,6 +39,29 @@ namespace GameofKingdom.rescources.classes
             }
         }
 
+        public static Boolean ReturnLicence()
+        {
+            if (File.Exists(LicenceFilePath))
+            {
+                List<LicenceModel> licences = new();
+                string json = File.ReadAllText(LicenceFilePath);
+
+                if (!String.IsNullOrEmpty(json))
+                {
+                    licences = JsonSerializer.Deserialize<List<LicenceModel>>(json);
+
+                    foreach (var licence in licences)
+                        if (licence.Name == System.Security.Principal.WindowsIdentity.GetCurrent().Name)
+                            return true;
+                }
+                else
+                    Console.WriteLine("ReturnLicence - error log - Licence File is empty");
+            }
+            else
+                Console.WriteLine("ReturnLicence - error log - Licence File doesn't exists");
+            return false;
+        }
+
         private static Boolean LicenceExist()
         {
             if (File.Exists(LicenceFilePath))
@@ -61,19 +83,24 @@ namespace GameofKingdom.rescources.classes
 
         public static void WriteLicence(Boolean Edit)
         {
-            Random rn = new();
             List<LicenceModel> users = new();
 
             if (Edit && File.Exists(LicenceFilePath))
             {
                 string json = File.ReadAllText(LicenceFilePath);
-                users = JsonSerializer.Deserialize<List<LicenceModel>>(json);
+                if(!string.IsNullOrEmpty(json))
+                    users = JsonSerializer.Deserialize<List<LicenceModel>>(json);
+                else
+                {
+                    Console.WriteLine("WriteLicence - error log - Licence File is empty");
+                    return;
+                }
             }
 
             users.Add(new LicenceModel()
             {
                 Name = System.Security.Principal.WindowsIdentity.GetCurrent().Name,
-                Code = Convert.ToString(rn.Next(999999999)),
+                Code = Guid.NewGuid().ToString(),
                 Licence = true
             });
 
@@ -87,7 +114,7 @@ namespace GameofKingdom.rescources.classes
 
         public static Boolean CheckSettingsFile()
         {
-            if(File.Exists(SettingsPath))
+            if (File.Exists(SettingsPath))
                 return true;
             else
             {
@@ -106,9 +133,8 @@ namespace GameofKingdom.rescources.classes
             });
 
             string settingsSerialized = JsonSerializer.Serialize(settings);
-            File.WriteAllText(SettingsPath,settingsSerialized);
+            File.WriteAllText(SettingsPath, settingsSerialized);
         }
-
 
         public static void OverrideSettings(int language, int resolution)
         {
@@ -126,7 +152,6 @@ namespace GameofKingdom.rescources.classes
             }
         }
 
-
         public static string ReturnPath(int pathId)
         {
             if (pathId == 0)
@@ -142,41 +167,81 @@ namespace GameofKingdom.rescources.classes
         public static Boolean CheckScore(int score, string name)
         {
             // sprawdza czy wynik rozegranej gry jest poprawny
-            return true;
+            return score > 0 && name != "Admin" && name != "admin" && name != "";
         }
 
         public static Boolean CheckScores(Boolean repetitive)
         {
             // sprawdza czy plik z wynikami istnieje i jeśli nie to go tworzy
-            if (repetitive)
+            if (File.Exists(ScoresPath))
             {
-                return File.Exists(ScoresPath);
+                return true;
             }
             else
             {
-                if (!File.Exists(ScoresPath))
+                if (repetitive)
                 {
-                    File.Create(ScoresPath);
+                    return false;
+                }
+                else
+                {
                     List<ScoreModel> data = new()
-                {
-                    new ScoreModel()
                     {
-                        Id = "0",
-                        Name = "Admin",
-                        Score = 250
-                    }
-                };
+                        new ScoreModel()
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            Name = "Admin",
+                            Score = 250
+                        }
+                    };
+
                     string json = JsonSerializer.Serialize(data);
                     File.WriteAllText(ScoresPath, json);
+                    return false;
                 }
             }
-            return true;
         }
 
         private static void WriteScore(int score, string name)
         {
             // zapisuje wynik gry do pliky json
-        }
+            List<ScoreModel> scores = new();
 
+            if (File.Exists(ScoresPath))
+            {
+                string readedJson = File.ReadAllText(ScoresPath);
+                if (!String.IsNullOrEmpty(readedJson))
+                {
+                    if (CheckScore(score, name))
+                    {
+                        scores = JsonSerializer.Deserialize<List<ScoreModel>>(readedJson);
+                        scores.Add(new ScoreModel()
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            Name = name,
+                            Score = score
+                        });
+
+                        string json = JsonSerializer.Serialize(scores);
+                        File.WriteAllText(ScoresPath, json);
+                    }
+                    else
+                    {
+                        Console.WriteLine("WriteScore - error log - Inputed score or user name is incorect");
+                        return;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("WriteScore - error log - Json file is empty");
+                    return;
+                }
+            }
+            else
+            {
+                Console.WriteLine("WriteScore - error log - Score file doesn't exist");
+                return;
+            }
+        }
     }
 }

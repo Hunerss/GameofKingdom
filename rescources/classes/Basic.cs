@@ -1,13 +1,9 @@
-﻿using GameofKingdom.windows;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 
 namespace GameofKingdom.rescources.classes
 {
