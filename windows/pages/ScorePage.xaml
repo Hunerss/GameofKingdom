@@ -14,9 +14,13 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Wyniki gier</TextBlock>
-        <ListBox Name="ScoreList" Grid.Row="2" MaxWidth="250" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
-        <Button Grid.Row="3" Width="175" FontSize="22" Content="Wróć do menu" Click="Btn_return"/>
+        <TextBlock Style="{StaticResource HeaderTextStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Wyniki gier</TextBlock>
+        <ListBox Name="ScoreList" Grid.Row="2" MaxWidth="250" HorizontalAlignment="Center" VerticalAlignment="Stretch" Style="{StaticResource ListBoxStyle}">
+            <ListBox.Background>
+                <SolidColorBrush Color="Gray" Opacity="0.3"/>
+            </ListBox.Background>
+        </ListBox>
+        <Button Style="{StaticResource BaseButtonStyle}" Grid.Row="3" Width="175" FontSize="22" Content="Wróć do menu" Click="Btn_return"/>
     </Grid>
     <UserControl.Resources>
         <DataTemplate x:Key="Score">

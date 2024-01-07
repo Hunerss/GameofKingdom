@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\localhost\source\repos\GameofKingdom\App.xaml
-11-744002807
+8-1181669995
 
 15119392645
 1951422256898
-rescources\languages\English.xaml;rescources\languages\Polish.xaml;rescources\languages\Russian.xaml;windows\pages\GamePage.xaml;windows\pages\InstructionPage.xaml;windows\pages\LicencePage.xaml;windows\pages\LogInPage.xaml;windows\pages\MainPage.xaml;windows\pages\MainSettingsPage.xaml;windows\pages\ScorePage.xaml;windows\Welcome.xaml;
+windows\pages\GamePage.xaml;windows\pages\InstructionPage.xaml;windows\pages\LicencePage.xaml;windows\pages\LogInPage.xaml;windows\pages\MainPage.xaml;windows\pages\MainSettingsPage.xaml;windows\pages\ScorePage.xaml;windows\Welcome.xaml;
 
-False
+True
 

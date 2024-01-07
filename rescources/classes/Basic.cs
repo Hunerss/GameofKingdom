@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
@@ -91,6 +92,7 @@ namespace GameofKingdom.rescources.classes
 
         private static void SetResolution(int resolution, Window win)
         {
+            Console.WriteLine("SetResolution - begining log - resolution option - " + resolution);
             switch (resolution)
             {
                 case 0:
@@ -136,25 +138,30 @@ namespace GameofKingdom.rescources.classes
                 case 10:
                     win.WindowState = WindowState.Maximized;
                     win.WindowStyle = WindowStyle.None;
-                    win.Height = SystemParameters.PrimaryScreenHeight;
-                    win.Width = SystemParameters.PrimaryScreenWidth;
+                    win.Left = 0;
+                    win.Top = 0;
                     break;
                 default:
                     win.Height = 450;
                     win.Width = 800;
                     break;
             }
+            if (resolution != 10)
+            {
+                win.Left = (SystemParameters.PrimaryScreenWidth - win.Width) / 2;
+                win.Top = (SystemParameters.PrimaryScreenHeight - win.Height) / 2;
+            }
         }
 
-        private static void SetLanguage(int language)
-        {
-            Application.Current.Resources.MergedDictionaries.Clear();
-            ResourceDictionary dictionary = new()
-            {
-                Source = new Uri(Basic.ReturnLanguage(language), UriKind.Relative)
-            };
-            Application.Current.Resources.MergedDictionaries.Add(dictionary);
-        }
+        //private static void SetLanguage(int language)
+        //{
+        //    Application.Current.Resources.MergedDictionaries.Clear();
+        //    ResourceDictionary dictionary = new()
+        //    {
+        //        Source = new Uri(Basic.ReturnLanguage(language), UriKind.Relative)
+        //    };
+        //    Application.Current.Resources.MergedDictionaries.Add(dictionary);
+        //}
 
         public static void ApplySettings(Window win)
         {
@@ -168,7 +175,7 @@ namespace GameofKingdom.rescources.classes
                     List<SettingsModel> settingsList = JsonSerializer.Deserialize<List<SettingsModel>>(loadedJson);
                     SettingsModel settings = settingsList[0];
 
-                    SetLanguage(settings.Language);
+                    //SetLanguage(settings.Language);
                     SetResolution(settings.Resolution, win);
                 }
                 else

@@ -1,0 +1,2160 @@
+﻿[
+  {
+    "id": "00",
+    "name": "Powódź",
+    "description": "Wielkie obszary twojego państwa zostały zalane przez powódź. Ludzie oczekują twojej pomocy, co zrobisz?",
+    "option_1": {
+      "text": "Niech zbudują sobie łódki",
+      "description": "Ludzie nie mogąc poradzić sobie z powodzią często musieli uciekać ze swoich domów i zostawiać wszystko za sobą.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wyślij armie do pomocy!",
+      "description": "Wsparcie żołnierzy uratowało ludzi przed ucieczką, ale kosztowało to życie wielu twoich wojowników.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": -2
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Pozwól lokalnym zarządcą się tym zająć",
+      "description": "Lokalni zarządcy wyjątkowo dobrze poradzili sobie z tym wyzwaniem, jednak twój autorytet i władza nad tymi regionami.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "01",
+    "name": "Nieurodzaj",
+    "description": "Nadszedł nieurodzaj, a zapasy żywności zaczynają się kończyć. Jakie decyzje podejmiesz, aby przetrwać ten trudny okres?",
+    "option_1": {
+      "text": "Ogłoszenie dni modlitwy w nadziei na lepsze czasy",
+      "description": "Ludzie zaczeli modły o lepsze czasy, ale nie pomogły. Ludzie giną z głodu, spichleże pustoszeją, a armia sie rozpada.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -3
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Podniesienie podatków w celu zakupu żywności od innych królestw",
+      "description": "Podniosłeś podatki. Co prawda zdobyłeś jedzenie, ale ludzie zdążyli zginąć, a twój autorytet osłabł.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 2
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Rozpoczęcie kampanii łupieżczej w poszukiwaniu żywności",
+      "description": "Ogłosiłeś barbażyństwo i rozbój. Armia aż skacze z radości, ale ludzie giną, a ci którzy zostają widza twoja siłe",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 4
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -3
+        }
+      ]
+    }
+  },
+  {
+    "id": "02",
+    "name": "Epidemia",
+    "description": "W twoim królestwie wybuchła epidemia, a ludność cierpi z powodu chorób. Jakie środki podejmiesz, aby poradzić sobie z tą trudną sytuacją?",
+    "option_1": {
+      "text": "Organizacja kwarantanny i pomoc chorym",
+      "description": "Ogłosiłeś kwarantanne zarażonych. Wielu z nich zgineło, a twój skarbiec ucierpiał.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zamknięcie granic w celu zatrzymania rozprzestrzeniania się choroby",
+      "description": "Granice zostały zamknięte. Handel ucierpiał, niektórzy zgieli, ale ludzie cie szanują.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Wysłanie misji dyplomatycznej po pomoc medyczną",
+      "description": "Wysłałeś prośbę o pomoc i dostałeś odpowiedź. Gospodarka państwa ucierpiała, a ty pokazałeś słabość.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "03",
+    "name": "Intrygi dworskie",
+    "description": "Wśród dworzan pojawiły się intrygi i spiski, które zagrażają stabilności królestwa. Jakie środki podejmiesz, aby zachować porządek i lojalność wśród swoich ludzi?",
+    "option_1": {
+      "text": "Rozpoczęcie dochodzenia w sprawie spisku",
+      "description": "Rozpoczołeś poszukiwania spiskowców, kosztowało cie to trochę, ale pokazałeś to, że łatwo nie dasz sie zabić.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zwołanie narady z dworzanami w celu mediacji",
+      "description": "Narady pozwoliły ci upewnić swoją pozycję, ale nie było to darmowe.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Wzmocnienie aparatu policyjnego dla zwiększenia kontroli",
+      "description": "Inwestycja w policę zapewniła ci spokój i zwiększyła siły, ale obciąza to gospodarkę.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    }
+  },
+  {
+    "id": "04",
+    "name": "Najeźdźcy",
+    "description": "Królestwo jest zagrożone najeźdźcami, którzy zbliżają się do granic. Jakie środki obronne podejmiesz, aby ochronić ludność?",
+    "option_1": {
+      "text": "Wzmocnienie umocnień granicznych i przygotowanie armii",
+      "description": "Środki obronne zostąły przedsięwzięte, umacnia to twoją obrone, ale gospodarka i ludzie są obciążeni.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Negocjacje dyplomatyczne z najeźdźcami",
+      "description": "Ludzie cieszą się z pokoju ale negocjacje z najeźdźcą nie służą twojej armii i gospodarce",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Evakuacja ludności do bezpiecznych miejsc",
+      "description": "Ograniczyłeś zagrożenie dla ludzi, było to dla nich dobre, ale armia sie nie ucieszy.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": -2
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "05",
+    "name": "Żniwa obfite",
+    "description": "Nastał czas żniw, a plony są obfite. Jakie kroki podejmiesz w celu najlepszego wykorzystania tego błogosławieństwa?",
+    "option_1": {
+      "text": "Rozdanie części plonów potrzebującym",
+      "description": "Ukazałeś dobroć swego serca i ludzie cię przez to kochają, a jak wiadomo to ludzie tworzą królestwo.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 3
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Skoncentrowanie się na eksportowaniu nadwyżek",
+      "description": "Zwiększyłeś eksport żywności i co prawda zyskałeś na tym, ale ludzie sporo stracili.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": 4
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zaplanowanie wielkiego święta na cześć obfitych żniw",
+      "description": "Wielki bal i uczta, ludzie się radują i cieszą swoim władcą.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "06",
+    "name": "Turniej Rycerski",
+    "description": "Organizatorzy proponują zorganizowanie wielkiego turnieju rycerskiego, który przyciągnie uwagę z całego królestwa. Jakie decyzje podejmiesz w związku z tą propozycją?",
+    "option_1": {
+      "text": "Zgoda na zorganizowanie turnieju jako formy rozrywki",
+      "description": "Wydałeś zgode na turniej, będzie to kosztować, ale ludzie się ucieszą.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Odrzucenie propozycji z powodu kosztów i bezpieczeństwa",
+      "description": "Nie wydałeś zgody na żaden turnej, zaoszczędziłeś trochę, ale ludzie by woleliby trochę rozrywki.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Ograniczenie turnieju do mniejszej skali, aby obniżyć koszty",
+      "description": "Dałeś zgode na truniej, ale nie w pełnej skali, ludzie się cieszą, a skarbiec aż tak nie uceirpiał",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "07",
+    "name": "Złota Gorączka",
+    "description": "W królestwie odkryto nowe złoża złota, co przyciągnęło górników i poszukiwaczy przygód. Jakie kroki podejmiesz, aby skorzystać z tej sytuacji?",
+    "option_1": {
+      "text": "Rozpocznij intensywną eksploatację złóż",
+      "description": "Ciężkie warunki wymuszone absurdalnymi zabiły wielu pracowników, ale twoja potęga wzrosła.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": 3
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Rozpocznij ograniczoną eksploatację, dbając o środowisko i zrównoważony rozwój",
+      "description": "Delikatne kroki sprawiły, że region znacznie się rowniął i stanie się kluczowy, dla przyszłych pokoleń.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": 1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zakaż wydobycia złota ze względu na obawy o destabilizację gospodarki",
+      "description": "Po co mi jakieś tam ryzykowne operacje, przecież chłopi na moich ziemiach zarabiają dla mnie wystarczająco.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "08",
+    "name": "Zwiad Krainy Dzikich Bestii",
+    "description": "Zwiadowcy donieśli o narastającej liczbie dzikich bestii w okolicznych lasach, które zagrażają bezpieczeństwu królestwa. Jakie działania podjąłbyś wobec tego zagrożenia?",
+    "option_1": {
+      "text": "Zorganizuj wielkie polowania na bestie",
+      "description": "Była to naprawdę wspaniała impreza, ty oraz twoi generałowie bawiliście się świetnie.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wyślij zwiadowócw, żeby dokładniej zbadali temat i przygotowali dokładny plan działania",
+      "description": "Dokładne przygotowania sprawiły, że szybka kampania twojej armii zniszczyła zagrożenie bez strat własnych.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Rozkaż budowę umocnień obronnych wzdłuż granic lasu",
+      "description": "Po co walczyć jak można zbudować wielki mór i nie patrzeć za niego.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "09",
+    "name": "Złodziej wśród Dworu",
+    "description": "W twoim dworze zaczęto zauważać dziwne zniknięcia cennych przedmiotów. Jakie środki podejmiesz w celu ujęcia złodzieja?",
+    "option_1": {
+      "text": "Rozpocznij intensywne śledztwo wśród służby",
+      "description": "Szybko udało się złapać złodzieja, kosztowało to wiele niewinnych żyć, ale liczy się dostarczenie kary winnym.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wzmocnij obrone osobistą i utrudnij dostęp do skarbca",
+      "description": "Droższa i liczniejsza gwardia pałacowa jak nic zniechęci tego złodzieja do kolejnych kradzieży.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Wyślij specjalnych agentów do infiltracji dworu",
+      "description": "Kosztowni zabójcy zinfiltrowali dwór, dokładnie badając każdego i dając ci masę ciekawych informacji, oczywiście złodziej zostal ujęty.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -3
+        },
+        {
+          "resource": "Money",
+          "value": -4
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 4
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "Zagrożenie Inwazją Barbarzyńców",
+    "description": "Docierają do ciebie informacje o zbliżającej się inwazji barbarzyńców z sąsiednich ziem. Jakie kroki podejmiesz w obliczu tego zagrożenia?",
+    "option_1": {
+      "text": "Mobilizuj armię, żeby umocnić granicę",
+      "description": "Dzięki temu pokazowi sił inwazja została odparta, a twoja armia zyskała wielu nowych członków.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 3
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Negocjacjuj z przywódcami barbarzyńców w celu uniknięcia konfliktu",
+      "description": "Ci barbarzyńcy chcieli tylko trochę złota i jedzenia. Niech je mają i dadzą mi spokój.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Rozkaż ewakuację ludności do bezpiecznych miejsc",
+      "description": "Chcąc uniknąć konfrontacji z najeźdźcami kazałeś ludności zostawić wszystko za sobą i uciekać w głąb kraju.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -3
+        },
+        {
+          "resource": "Money",
+          "value": -4
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": 4
+        }
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "name": "Zdrada Dworzanina",
+    "description": "Jeden z wpływowych dworzan oskarża innego o zdradę. Jakie działania podejmiesz w tej delikatnej sprawie?",
+    "option_1": {
+      "text": "Przeprowadź dokładne śledztwo",
+      "description": "Długie śledztwo doprowadziło do nikąd, ale dało protekst, żeby zabić obu z nich i przejąć ich wpływy.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Odrzuć oskarżenia bez dodatkowych działań",
+      "description": "MÓJ PRZYJACIEL jest niewinny!",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Wygnaj oskarżonego",
+      "description": "W darze łaski wygnałeś tego zdrajcę ze swojego królestwa.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "Odkrycie Starożytnych Ruin",
+    "description": "Podczas polowania odkryto starożytne ruiny. Jakie działania podejmiesz w związku z tym odkryciem?",
+    "option_1": {
+      "text": "Zorganizuj ekspedycję archeologiczną",
+      "description": "Dzięki temu udało ci się połączyć swoje królestwo z antycznym Imperium, co zapewniło ci legitimizację i sławę.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zabezpiecz teren i zachowaj tajemnicę",
+      "description": "Nikt nie może się o tym dowiedzieć. Wykorzystam to jako frotel w walce z szlachtą.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zignoruj odkrycie",
+      "description": "Kogo obchodz jakieś tam kilka starych domków czy jeden rozsypujący się zamek.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "name": "Nadciągająca Burza",
+    "description": "Nagle na horyzoncie pojawiły się ciemne chmury. Wygląda na to, że nadciąga burza. Jak zareagujesz?",
+    "option_1": {
+      "text": "Przygotuj ludność na nadchodzącą burzę",
+      "description": "Szybkie działanie doprowadziły do minimalnych strat.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Nakarz wojsku ewakułować wszystkich!",
+      "description": "Twoja błędna i kosztowna decyzja, sprawila, że bardzo dużo straciłeś.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zignoruj zagrożenie, to tylko burza",
+      "description": "Kogo obchodzi jakiś tam deszczyk, jak nic zginie tylko kilku żebraków.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "name": "Złowieszcze Proroctwo",
+    "description": "W królestwie rozprzestrzenia się plotka o złowieszczym proroctwie, które przepowiada nieszczęścia i klęski. Jak zareagujesz na tę sytuację?",
+    "option_1": {
+      "text": "Zorganizuj ceremonię, aby uspokoić lud",
+      "description": "Kapłani przekazali ludowi, że przepowiednia się już ziściła, a ty jej zapobiegłeś, przez co ludzie widzą w tobie zbawcę.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zainicjuj dochodzenie w sprawie proroctwa",
+      "description": "Jak przypuszczałeś, to twoi wrogowie chcieli zdestabilizować twoje państwo, ale udało ci się ich na tym złapać.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zignoruj plotki, skup się na codziennych sprawach",
+      "description": "Kogo obchodzi gadanie tego motłochu o jakiś tam bajkach, jedyne co się liczy, to ta uczta we wtorek.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "name": "Spisek Szlachty",
+    "description": "Wśród szlachty rodzi się spisek mający na celu obalenie twojego rządzenia. Jak zareagujesz na tę groźbę?",
+    "option_1": {
+      "text": "Przeprowadź aresztowania i staw czoło buntownikom",
+      "description": "Nie spodziewana operacja złamała szyki buntowników i mimo dużych strat zapobiegła rebeli.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": -2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Negocjuj z buntownikami, obiecując im ustępstwa",
+      "description": "Nie mogożesz sobie pozwolić, żeby kraj podał w wojnę domową, dlatego zdecydowałeś oddać trocę swojej władzy.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Uciekaj z zamku, szukaj schronienia poza królestwem",
+      "description": "Jak nic za kilka lat zapragną swoje króla z powrotem.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "name": "Nadzwyczajne Zjawisko Nieba",
+    "description": "Niesamowite zjawisko astronomiczne przyciąga uwagę ludzi. Jak wykorzystasz to wydarzenie?",
+    "option_1": {
+      "text": "Zorganizuj ceremonię religijną, ogłaszając to znakiem boskiej łaski",
+      "description": "Twoi arcykapłani szybko przekazali ludowi, że te zjawiska do znak od boga, że ich władca jest przez niego wybrany.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zignoruj zjawisko, skupiając się na codziennych sprawach",
+      "description": "Kogo obchodzi jakiś układ chmór czy tam gwiazd.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": 1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zbadaj zjawisko naukowo, starając się zrozumieć jego źródło",
+      "description": "Długie miesiące badań nie wyjaśniły ci dlaczego doszło do tego zjawiska, ale wiele dziedziń nauki znacznie się rozwineło.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "name": "Tajemnicze Zaginięcia",
+    "description": "W różnych częściach królestwa zaczynają się pojawiać tajemnicze zniknięcia ludzi. Jak zareagujesz na ten problem?",
+    "option_1": {
+      "text": "Wyslij śledczego do zbadania zaginięć",
+      "description": "Śledstwo wykazało, że ludzi porywała tajemnicza grupa zabójców, żeby wcielić ich w swoje szeregi, po odkryciu ich zaoferowali ci swoje usługi.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zorganizuj straż obywatelską, aby pilnować bezpieczeństwa",
+      "description": "Ludzie powinni zajmować się innymi ludźmi, dlatego nowe jednostki milicji powinny załatwić ten problem albo chociaż pomóc uspokoić ludzi.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zlekceważ sprawę, uznając to za zbieg okoliczności",
+      "description": "To pewnie kilku nie wiernych mężów uciekło od swoich żon albo jakieś inne błachostki. Mam ważniejsze rzeczy do zrobienia niż szukanie pojedyńczych osób.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    }
+  },
+  {
+    "id": "18",
+    "name": "Pojawienie Nowej Religii",
+    "description": "Na terenie królestwa pojawiła się nowa religia, przyciągając wielu zwolenników. Jak zamierzasz zareagować na to wydarzenie?",
+    "option_1": {
+      "text": "Zakazać praktykowania nowej religii",
+      "description": "Zakazałeś te śmieszne heretyckie wymysły, zanim były w stanie zaszkodzić twoim poddanym.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 1
+        },
+        {
+          "resource": "Army",
+          "value": -2
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Tolerować różnorodność religijną",
+      "description": "Jak każda religia w państwie, tak i ta powinna być tolerowana i dofinansowana ku uciesze gawierzy.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Przyjąć nową religię jako oficjalną w królestwie",
+      "description": "Ta nowa idea, jest bardzo opłacalna. Oprócz rzesz uchodźców religijnych, kosztowności z złupionych świątyń, twoja władza nad państwem wzrosła",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 4
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "name": "Prezent od sąsiada",
+    "description": "Sąsiednie państwo przysłało ci kosztowny prezent jako wyraz przyjaźni. Jakie decyzje podejmiesz w związku z tą hojnością?",
+    "option_1": {
+      "text": "Przyjmij prezent z wdzięcznością",
+      "description": "Prezent pozwolił na liczne inwestycje, które udało ci się zrealizować, jednocześnie wiele zyskując.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 2
+        },
+        {
+          "resource": "Money",
+          "value": 4
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Odrzuć prezent, obawiając się ukrytych intencji sąsiada",
+      "description": "Twoja podejrzliwość sprawiła, że chociaż nic nie straciłeś, a więc zyskałeś!",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zorganizuj uroczysty bankiet dla przedstawicieli sąsiedniego państwa",
+      "description": "Wykorzysując prezent oraz własne środki użądź ogromny bankiet, w celu pokazania swojej wielkości swoim przyjaciołom.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -3
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -3
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "name": "Gwałtowny wzrost handlu",
+    "description": "Twoje państwo doświadcza gwałtownego wzrostu handlu z sąsiednimi królestwami. Jakie decyzje podejmiesz w obliczu tego zjawiska?",
+    "option_1": {
+      "text": "Zainwestuj w rozwój handlu, aby zwiększyć zyski",
+      "description": "Sprawne inwestycje sprawiły, że do skarbca wpłyneło dużo złota i innych cennych metali.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": 4
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Wprowadź dodatkowe opłaty i podatki od handlu",
+      "description": "Konserwatywne podejście po pewnym czasie zabiło handel, ale do skarbca wpłyneły niepoliczalne bogacstwa.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": 5
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zawrzyj sojusz handlowy z najpotężniejszym z sąsiadów",
+      "description": "Wykorzystując wymianę towarów i kultury udało ci się pozyskać potężnego sojusznika na długie lata.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": 3
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "name": "Objęta opieka sierot",
+    "description": "W królestwie pojawiła się grupa sierot, które utraciły rodziny z powodu różnych katastrof i wojen. Jakie działania podejmiesz wobec tej sytuacji?",
+    "option_1": {
+      "text": "Zbuduj sierociniec i zapewnij im schronienie",
+      "description": "Decyzja o zbudowaniu sierocińca twojego imienia zapewniła ci bardzo dużo pozytywnej renomy i poprawiło nastroje ludu.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zorganizuj zbiórkę publiczną na rzecz sierot",
+      "description": "Zbiórka co prawda owocna, ale nie zebrała wystarczająco środków na budowę odpowienio majestatycznego miejsca, jendak ludzie patrzą na ciebie trochę lepiej.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": 2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Rozkaż swoim żołnierzom przygarnąć ich i wychować na nowe pokolenie żołnierzy",
+      "description": "Po kilku latach twoja armia pozyskała wielu nowych żołnierzy.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "22",
+    "name": "Podbój nowych terenów",
+    "description": "Twoi zwiadowcy odkryli obszar bogaty w zasoby naturalne. Czy zdecydujesz się podjąć ryzyko i podbić te tereny?",
+    "option_1": {
+      "text": "Rozpocznij kampanię podboju",
+      "description": "Długa i krwawa kampania podporządkowała ci nowe bogate terytoria.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 3
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": -2
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": -3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Przeprowadź badania nad obszarem, ale nie podejmuj agresywnych decyzji",
+      "description": "W wyniku padań twoi ludzie odkryli niezwykle wojowniczy lud zamieszkający te tereny, dzięki badaniu ich zwyczaji udało ci się stworzyć nowe eliterne jednostki składające się z nich.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Ignoruj nowo odkryte obszary",
+      "description": "Jako wybrany przez Boga i ludzi władca powinnieneś władać ziemią twoich ojców, a nie jakimiś bez ludnymi pustkowiami.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "23",
+    "name": "Artyści ośmiaszający Władcę",
+    "description": "Znani artyści stworzyli dzieło sztuki ukazujące władcę w karykaturalny sposób. Jak zareagujesz na tę prowokację?",
+    "option_1": {
+      "text": "Zignoruj i pozwól sztuce istnieć",
+      "description": "Ośmieszenie władzy sprawiło, że autrytet twój jak i twoich zarządców znacząco spadł.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -5
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Skonfiskuj dzieło i ukaraj artystów",
+      "description": "Głośne dzieło, które znikneło z widoku szybko straciło rozgłos, a wizerunek władzy zbytnio nie ucierpiał.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Zamów własne dzieło ukazujące pozytywny wizerunek",
+      "description": "Twoja szybka reakcja oraz ogromne wydatki na dziło sprawiły, że dzieło niezależnych artystów szybko zostało przycmione.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 5
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "24",
+    "name": "Prorok",
+    "description": "Na dworze pojawił się tajemniczy prorok twierdzący, że przepowiedział nadchodzącą klęskę. Ludzie zaczynają panicznie reagować, jak zareagujesz?",
+    "option_1": {
+      "text": "Ignoruj proroctwo, to tylko zabobony",
+      "description": "Motłoch może wierzyć w takie bajk, ale rząd i władca muszą obiektywnie patrzeć na świat.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Zakaż proroctw i uwięź proroka",
+      "description": "Kosztowna operacja sprawiła, że prorok trafił do więzienia, a jego bajki szybko wymarły.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Wykorzystaj sytuację na swoją korzyść i wspieraj proroka",
+      "description": "Religia jako opium dla ludu. Przyćmiewa pospulstwu wzrok i pozwala ci lepiej nimi rządzić.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": 1
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "25",
+    "name": "Rozmowy pokojowe z wrogim Państwem",
+    "description": "Wrogie państwo zaczęło wysyłać sygnały o gotowości do rozmów pokojowych. Jak podejdziesz do tej sytuacji?",
+    "option_1": {
+      "text": "Przystąp do rozmów w celu wynegocjonowania pokoju",
+      "description": "Długie rozmowy pozwoliły wam znaleźć wspólny consensus co zapewniło koniec tej strasznej wojny.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Odmów rozmów i kontynuuj wojnę",
+      "description": "Puste słowa nic nie znaczą, jedyne co się liczby to siła armii.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Symuluj zainteresowanie pokojem, ale jednocześnie przygotuj się do zasadzki",
+      "description": "Wrogowie byli pewni, że chcesz pokoju. Ta zasadzka znacznie przechyliła zwyciętwo w wojnie na twoją stronę.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  }
+]

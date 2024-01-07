@@ -31,6 +31,7 @@ namespace GameofKingdom.windows.pages.MainWindowPages
             init = true;
             InitializeComponent();
             init = false;
+            Basic.ApplySettings(window);
         }
 
         private void StartGame(object sender, RoutedEventArgs e)

@@ -1,0 +1,948 @@
+﻿[
+  {
+    "id": "0",
+    "name": "Eternal Hunger",
+    "description": "The lack of food has persisted for so long that subjects are dying trying to secure a slice of bread for their children. What will you do?",
+    "option_1": {
+      "text": "Open the Royal Treasury and purchase a lot of food for the subjects",
+      "description": "In the nick of time, you managed to buy enough food for the subjects to survive until the harvest, saving the state.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 10
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Send the army to plunder neighbors and secure more food",
+      "description": "The long and bloody raid provided enough food for your state until the harvest.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 5
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "If they have no bread, let them eat cake",
+      "description": "Hunger killed most of your state's population; those who didn't die fled. And you, the wretched creature you are, perished from hunger after eating your last loyal servant.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "1",
+    "name": "Harvest Failure",
+    "description": "Years of abundance have made people unwilling to work, knowing that fields and orchards will yield food anyway. What actions will you take?",
+    "option_1": {
+      "text": "Confiscate and sell most of the food reserves to forcefully motivate people to work",
+      "description": "People are angry; some lost their entire wealth, but the desire to work or rather the fear of winter has led to fields being cultivated again.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -10
+        },
+        {
+          "resource": "Money",
+          "value": 10
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Send the army, disguised as invaders, to burn the food reserves",
+      "description": "Terrified for their fate after the terrible attack, people quickly returned to work.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -10
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "My subjects, like me, should be able to rest!",
+      "description": "This year, the fields did not yield, and it could be called the famine of the century. Deluded by hunger and superstitious fear, people burned you at the stake for poor governance.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "name": "Hole in the Treasury",
+    "description": "Imprudent financial policies have left the treasury empty, and the subjects are starting to notice. What actions will you take?",
+    "option_1": {
+      "text": "Introduce new taxes to plug the budget hole",
+      "description": "People resisted as always, but after some time, they gave up.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 10
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 5
+        },
+        {
+          "resource": "People",
+          "value": -5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Send special forces to attack a few wealthy caravans to acquire additional funds",
+      "description": "Merchants did not expect an attack from bandits in the mountains, and your forces returned with numerous treasures.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 10
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Let the free market regulate it, and the treasury will fill itself",
+      "description": "The treasury did not fill, and the state went bankrupt, leading to your forced abdication imposed by the new merchant elite.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "name": "Flourishing of Art",
+    "description": "Money is pouring out of the treasury, people are constantly getting rich, and art is flourishing, but you feel that something is wrong. What do you want to do about it?",
+    "option_1": {
+      "text": "Ban the development of too new and radical forms of art",
+      "description": "The ban alone did little, but bribes for critics allowed to curb the rapid development, and sponsors of artists lost their fortunes.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Order the army to kill inconvenient artists and destroy their works",
+      "description": "People are angry, but the army effectively suppressed art, artists, and rebels.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "As an art connoisseur, allow them to create as much as their artistic soul desires",
+      "description": "The development of form and content quickly got out of control, eventually turning art into debauchery. The last thing you saw was your head cut off and placed into your open abdomen.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "name": "Military Defeat",
+    "description": "Your neighbors have noticed the weakness of your army and launched an unexpected attack. How will you react?",
+    "option_1": {
+      "text": "Conduct a violent conscription and drown them in bodies",
+      "description": "Hundreds of innocent people died in suicidal attacks, but the enemies were repelled.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 10
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Hire expensive mercenaries",
+      "description": "Costly mercenaries allowed you to repel the enemy attack.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -5
+        },
+        {
+          "resource": "Army",
+          "value": 10
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Let them take some of these useless territories; my successor will simply have to reclaim them",
+      "description": "To your surprise, the enemy army stopped in your capital and left with your head on a spear and a complete victory.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "name": "Military Coup",
+    "description": "A powerful army controlling the majority of the country decides to change the majority to the whole. How will you react?",
+    "option_1": {
+      "text": "Try to bribe commanders by making numerous concessions",
+      "description": "Commanders started fighting among themselves for new privileges, causing a split in the army. The remaining forces agreed to your proposal.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -10
+        },
+        {
+          "resource": "Control",
+          "value": -5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Hire mercenaries to fight in this civil war",
+      "description": "Organized mercenaries and highly effective assassins restored your control over the army, albeit at a considerable cost.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -10
+        },
+        {
+          "resource": "Army",
+          "value": -10
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Surely their stupid rebellion will collapse before reaching the capital",
+      "description": "You were wrong; they reached the capital, seized you, and ceremoniously spilled your blood, shouting, 'Blood for the Blood God.'",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "name": "Loss of Control",
+    "description": "Numerous concessions to local rulers, the parliament, and the nobility have left you with almost no power in the state.",
+    "option_1": {
+      "text": "Conduct a radical reform to regain some power",
+      "description": "Before anyone realized, numerous loopholes in laws and decrees allowed you to regain your legitimate authority.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 10
+        },
+        {
+          "resource": "People",
+          "value": -5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Destroy the parliament, kill the nobility, and replace the rulers",
+      "description": "A swift and bloody military operation prevented rebellion or other dangerous consequences.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 20
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Finally! Now I can go on vacation",
+      "description": "You went on a lifelong vacation in a small neutral state in the south, and during that time, the state transformed into a republic and federalized.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "name": "l'état, c'est moi",
+    "description": "You have achieved absolute power; you are the God of your state, deciding on every aspect of the life and death of your subjects. Bravo, you did it!",
+    "option_1": {
+      "text": "",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Finish the game and count points.",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "name": "Death of the Kingdom",
+    "description": "Your tragic rule has led to the death of most inhabitants of your kingdom.",
+    "option_1": {
+      "text": "Try to bring refugees and citizens from other states",
+      "description": "Favorable subsidies have allowed you to gain many new citizens.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -5
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 5
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Demobilize part of the army",
+      "description": "Disbanding most of your uncountable army has filled the gaps with people.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": -5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 5
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Let the remaining subjects encourage others to come",
+      "description": "Seeing that your state depopulated, not many people wanted to come here, causing your state to completely die out, and you can rule the land without people.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "name": "Overpopulation",
+    "description": "There are simply too many of your subjects, and your territories cannot sustain them.",
+    "option_1": {
+      "text": "Try to fuel colonial sentiments",
+      "description": "Your numerous subjects felt the desire to explore the world and settle in new places; many of them emigrated to your overseas colonies.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -5
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -10
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Conduct a conscription and go to war",
+      "description": "War claimed numerous lives, solving this problem and increasing your military power.",
+      "end": false,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 5
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": -10
+        }
+      ]
+    },
+    "option_3": {
+      "text": "More subjects mean more taxes, so let them multiply even faster",
+      "description": "Overpopulation escalated to such an extent that the state became absurdly impoverished, leading to unrest, revolution, and your downfall.",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "End of Time",
+    "description": "Your time on this earth has come to an end. Whether you were a good ruler, no one knows, but you lived to old age and on your deathbed, you passed power to your incredibly talented and ambitious grandson.",
+    "option_1": {
+      "text": "",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Finish the game and count points.",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "",
+      "description": ".",
+      "end": true,
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 0
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  }
+]

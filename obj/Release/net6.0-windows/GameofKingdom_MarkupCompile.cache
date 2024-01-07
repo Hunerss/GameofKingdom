@@ -1,7 +1,7 @@
 ﻿GameofKingdom
 
 
-winexe
+exe
 C#
 .cs
 C:\Users\localhost\source\repos\GameofKingdom\obj\Release\net6.0-windows\
@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\localhost\source\repos\GameofKingdom\App.xaml
-11407045341
+8-1181669995
 
-3-1233169557
-194-1325968647
-MainWindow.xaml;
+13-1768138079
+1951422256898
+windows\pages\GamePage.xaml;windows\pages\InstructionPage.xaml;windows\pages\LicencePage.xaml;windows\pages\LogInPage.xaml;windows\pages\MainPage.xaml;windows\pages\MainSettingsPage.xaml;windows\pages\ScorePage.xaml;windows\Welcome.xaml;
 
-True
+False
 

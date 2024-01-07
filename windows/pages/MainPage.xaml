@@ -16,7 +16,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Column="1" Grid.Row="0" FontWeight="Bold">Witaj w Grze Królestw</TextBlock>
+        <TextBlock Style="{StaticResource HeaderTextStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Column="1" Grid.Row="0" FontWeight="Bold">Witaj w Grze Królestw</TextBlock>
         <Grid Grid.Column="1" Grid.Row="1" Margin="0 0 0 20">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -28,9 +28,9 @@
                     <RowDefinition Height="2*"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <Button Name="btn_1" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Graj" Click="Navigation"/>
-                <Button Name="btn_2" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Score" Click="Navigation"/>
-                <Button Name="btn_3" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Instrukcja" Click="Navigation"/>
+                <Button Style="{StaticResource BaseButtonStyle}" Foreground="White" Name="btn_1" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Graj" Click="Navigation"/>
+                <Button Style="{StaticResource BaseButtonStyle}" Name="btn_2" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Wyniki" Click="Navigation"/>
+                <Button Style="{StaticResource BaseButtonStyle}" Name="btn_3" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Instrukcja" Click="Navigation"/>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
@@ -38,9 +38,9 @@
                     <RowDefinition Height="2*"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <Button Name="btn_4" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Opcje" Click="Navigation"/>
-                <Button Name="btn_5" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Licencja" Click="Navigation"/>
-                <Button Name="btn_6" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Wyjdź" Click="Navigation"/>
+                <Button Style="{StaticResource BaseButtonStyle}" Name="btn_4" Grid.Row="0" Width="200" Height="75" FontSize="32" Content="Opcje" Click="Navigation"/>
+                <Button Style="{StaticResource BaseButtonStyle}" Name="btn_5" Grid.Row="1" Width="200" Height="75" FontSize="32" Content="Licencja" Click="Navigation"/>
+                <Button Style="{StaticResource BaseButtonStyle}" Name="btn_6" Grid.Row="2" Width="200" Height="75" FontSize="32" Content="Wyjdź" Click="Navigation"/>
             </Grid>
         </Grid>
     </Grid>

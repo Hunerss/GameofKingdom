@@ -22,6 +22,7 @@ namespace GameofKingdom.windows
             window = win;
             InitializeComponent();
             DisplayScores();
+            Basic.ApplySettings(window);
         }
 
         private void DisplayScores()

@@ -1,4 +1,5 @@
 ﻿using GameofKingdom.rescources.classes;
+using GameofKingdom.windows.pages.MainWindowPages;
 using GameofKingdom.windows.pages.SettingsWindowPages;
 using GameofKingdom.windows.tmp.WelcomeWindowPages;
 using System;
@@ -20,6 +21,7 @@ namespace GameofKingdom.windows
         {
             window = win;
             InitializeComponent();
+            Basic.ApplySettings(window);
         }
 
         private void Navigation(object sender, RoutedEventArgs e)
@@ -35,7 +37,7 @@ namespace GameofKingdom.windows
                         {
                             case "btn_1":
                                 Console.WriteLine("Moving to Main window");
-                                Basic.NavigateTo(window.frame, new ScorePage(window));
+                                Basic.NavigateTo(window.frame, new LogInPage(window));
                                 break;
                             case "btn_2":
                                 Console.WriteLine("Moving to Score window");

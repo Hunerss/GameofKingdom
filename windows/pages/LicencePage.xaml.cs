@@ -29,6 +29,7 @@ namespace GameofKingdom.windows.tmp.WelcomeWindowPages
             window = win;
             InitializeComponent();
             SetLicenceAgreament();
+            Basic.ApplySettings(window);
         }
 
         private void LicenceOperation(object sender, RoutedEventArgs e)
@@ -49,6 +50,7 @@ namespace GameofKingdom.windows.tmp.WelcomeWindowPages
                 Console.WriteLine("Licence Error - Licence not accepted");
                 MessageBox.Show("Umowa Licenycja nie zakceptowana, zamykanie aplikacji");
                 Window.GetWindow(this).Close();
+                Application.Current.Shutdown();
             }
         }
 

@@ -16,6 +16,7 @@ namespace GameofKingdom.windows.tmp.WelcomeWindowPages
         {
             window = win;
             InitializeComponent();
+            Basic.ApplySettings(window);
         }
 
         private void Btn_return(object sender, RoutedEventArgs e)

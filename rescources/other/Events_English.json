@@ -1,0 +1,2160 @@
+﻿[
+  {
+  "id": "00",
+  "name": "Flood",
+  "description": "Vast areas of your kingdom have been flooded. People await your help, what will you do?",
+  "option_1": {
+    "text": "Let them build boats",
+    "description": "Unable to cope with the flood, people often had to flee their homes, leaving everything behind.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -2
+      },
+      {
+        "resource": "Money",
+        "value": 0
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 0
+      },
+      {
+        "resource": "People",
+        "value": -2
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Send armies for assistance!",
+    "description": "The support of soldiers saved people from fleeing, but it cost the lives of many of your warriors.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": -2
+      },
+      {
+        "resource": "Control",
+        "value": 0
+      },
+      {
+        "resource": "People",
+        "value": 0
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Let local rulers handle it",
+    "description": "Local rulers exceptionally managed this challenge well, but it cost you authority and control over those regions.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": 0
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": -5
+      },
+      {
+        "resource": "People",
+        "value": 0
+      }
+    ]
+  }
+  },
+  {
+  "id": "01",
+  "name": "Famine",
+  "description": "Famine has arrived, and food supplies are running out. What decisions will you make to survive this difficult period?",
+  "option_1": {
+    "text": "Declaration of prayer days in hope for better times",
+    "description": "People started praying for better times, but it didn't help. People are dying of hunger, granaries are emptying, and the army is falling apart.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -3
+      },
+      {
+        "resource": "Money",
+        "value": 0
+      },
+      {
+        "resource": "Army",
+        "value": -1
+      },
+      {
+        "resource": "Control",
+        "value": 0
+      },
+      {
+        "resource": "People",
+        "value": -2
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Raise taxes to purchase food from other kingdoms",
+    "description": "You raised taxes. While you gained food, people died, and your authority weakened.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 2
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": -1
+      },
+      {
+        "resource": "People",
+        "value": -1
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Initiate a plunder campaign in search of food",
+    "description": "You declared looting and robbery. The army is thrilled, but people die, and those who remain see your strength.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 4
+      },
+      {
+        "resource": "Money",
+        "value": -3
+      },
+      {
+        "resource": "Army",
+        "value": 2
+      },
+      {
+        "resource": "Control",
+        "value": 1
+      },
+      {
+        "resource": "People",
+        "value": -3
+      }
+    ]
+  }
+  },
+  {
+  "id": "02",
+  "name": "Epidemic",
+  "description": "An epidemic has erupted in your kingdom, and the population is suffering from diseases. What measures will you take to deal with this difficult situation?",
+  "option_1": {
+    "text": "Organization of quarantine and assistance to the sick",
+    "description": "You declared a quarantine for the infected. Many of them perished, and your treasury suffered.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 1
+      },
+      {
+        "resource": "People",
+        "value": -3
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Closing borders to stop the spread of the disease",
+    "description": "Borders were closed. Trade suffered, some perished, but people respect you.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": -2
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Sending a diplomatic mission for medical aid",
+    "description": "You sent a request for help and received a response. The state's economy suffered, and you showed weakness.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -2
+      },
+      {
+        "resource": "Money",
+        "value": -3
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": -1
+      },
+      {
+        "resource": "People",
+        "value": 1
+      }
+    ]
+  }
+  },
+  {
+    "id": "03",
+    "name": "Court Intrigues",
+    "description": "Intrigues and conspiracies have arisen among the courtiers, posing a threat to the kingdom's stability. What measures will you take to maintain order and loyalty among your people?",
+    "option_1": {
+      "text": "Initiate an investigation into the conspiracy",
+      "description": "You started the search for conspirators; it cost you a bit, but you showed that you won't be easily defeated.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Convene a council with courtiers for mediation",
+      "description": "The council allowed you to secure your position, but it wasn't free.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Strengthen the police force to increase control",
+      "description": "Investing in the police provides you with peace and increased strength, but it burdens the economy.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    }
+  },
+  {
+    "id": "04",
+    "name": "Invaders",
+    "description": "The kingdom is threatened by invaders approaching the borders. What defensive measures will you take to protect the population?",
+    "option_1": {
+      "text": "Reinforce border fortifications and prepare the army",
+      "description": "Defensive measures have been taken, strengthening your defense, but the economy and people are burdened.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Diplomatic negotiations with the invaders",
+      "description": "People rejoice for peace, but negotiations with the invaders don't benefit your army and economy.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Evacuate the population to safe places",
+      "description": "You reduced the threat to the people; it was good for them, but the army is not pleased.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": -2
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "05",
+    "name": "Bountiful Harvest",
+    "description": "The time of harvest has come, and the yields are plentiful. What steps will you take to make the best use of this blessing?",
+    "option_1": {
+      "text": "Distribute part of the harvest to those in need",
+      "description": "You showed the kindness of your heart, and people love you for it; as it is known, people make the kingdom.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 3
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Focus on exporting surpluses",
+      "description": "You increased food exports, and although you gained from it, people lost a lot.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": 4
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Plan a grand celebration in honor of the bountiful harvest",
+      "description": "A grand ball and feast, people rejoice and celebrate their ruler.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "06",
+    "name": "Knight Tournament",
+    "description": "Organizers propose organizing a grand knight tournament that will attract attention from the entire kingdom. What decisions will you make in connection with this proposal?",
+    "option_1": {
+      "text": "Agree to organize the tournament as a form of entertainment",
+      "description": "You agreed to the tournament; it will cost, but people will be pleased.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Reject the proposal due to costs and safety concerns",
+      "description": "You did not agree to any tournament; you saved a bit, but people would prefer some entertainment.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Limit the tournament on a smaller scale to reduce costs",
+      "description": "You agreed to the tournament but not on a full scale; people are happy, and the treasury did not suffer too much.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "07",
+    "name": "Gold Rush",
+    "description": "New gold deposits have been discovered in the kingdom, attracting miners and adventurers. What steps will you take to benefit from this situation?",
+    "option_1": {
+      "text": "Initiate intensive exploitation of the deposits",
+      "description": "Harsh conditions imposed by the absurd have killed many workers, but your power has increased.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": 3
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Start limited exploitation, caring for the environment and sustainable development",
+      "description": "Gentle steps have leveled the region significantly and will become crucial for future generations.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": 1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Ban gold mining due to concerns about destabilizing the economy",
+      "description": "Why bother with risky operations when the peasants on my lands earn enough for me?",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "08",
+    "name": "Scouting the Wild Beast Territory",
+    "description": "Scouts report an increasing number of wild beasts in the nearby forests that threaten the kingdom's safety. What actions would you take against this threat?",
+    "option_1": {
+      "text": "Organize grand hunts for the beasts",
+      "description": "It was a truly splendid event; you and your generals had a great time.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Send scouts to investigate more thoroughly and prepare a precise action plan",
+      "description": "Thorough preparations resulted in a quick campaign of your army that destroyed the threat without your own losses.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Order the construction of defensive fortifications along the forest border",
+      "description": "Why fight when you can build a great wall and not look beyond it.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "09",
+    "name": "Thief Among the Court",
+    "description": "Strange disappearances of valuable items have been noticed in your court. What measures will you take to apprehend the thief?",
+    "option_1": {
+      "text": "Initiate an intensive investigation among the servants",
+      "description": "The thief was quickly caught; it cost many innocent lives, but delivering punishment to the guilty is what matters.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Strengthen personal defense and restrict access to the treasury",
+      "description": "A more expensive and numerous palace guard discourages the thief from further thefts.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Send special agents to infiltrate the court",
+      "description": "Costly assassins infiltrated the court, thoroughly examining everyone and providing you with a wealth of interesting information; of course, the thief was captured.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -3
+        },
+        {
+          "resource": "Money",
+          "value": -4
+        },
+        {
+          "resource": "Army",
+          "value": 2
+        },
+        {
+          "resource": "Control",
+          "value": 4
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "Barbarian Invasion Threat",
+    "description": "You receive information about an impending invasion of barbarians from neighboring lands. What steps will you take in the face of this threat?",
+    "option_1": {
+      "text": "Mobilize the army to strengthen the border",
+      "description": "Thanks to this show of strength, the invasion was repelled, and your army gained many new members.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -3
+        },
+        {
+          "resource": "Army",
+          "value": 3
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Negotiate with the leaders of the barbarians to avoid conflict",
+      "description": "These barbarians just wanted some gold and food. Let them have it, and they will leave me alone.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Order the evacuation of the population to safe places",
+      "description": "To avoid confrontation with the invaders, you ordered the population to leave everything behind and flee into the country.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -3
+        },
+        {
+          "resource": "Money",
+          "value": -4
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": 4
+        }
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "name": "Courtier's Betrayal",
+    "description": "One of the influential courtiers accuses another of betrayal. What actions will you take in this delicate matter?",
+    "option_1": {
+      "text": "Conduct a thorough investigation",
+      "description": "A long investigation led nowhere, but it gave you a pretext to kill both of them and seize their influence.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Dismiss the accusations without additional actions",
+      "description": "MY FRIEND is innocent!",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Banish the accused",
+      "description": "As an act of mercy, you banished this traitor from your kingdom.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -2
+        }
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "Discovery of Ancient Ruins",
+    "description": "During a hunting expedition, ancient ruins were discovered. What actions will you take in connection with this discovery?",
+    "option_1": {
+      "text": "Organize an archaeological expedition",
+      "description": "This allowed you to connect your kingdom with the ancient Empire, providing you with legitimacy and fame.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Secure the area and keep the secret",
+      "description": "No one can find out about this. I will use it as leverage in the fight against the nobility.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 3
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Ignore the discovery",
+      "description": "Who cares about a few old houses or a crumbling castle.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "name": "Approaching Storm",
+    "description": "Dark clouds suddenly appear on the horizon. It seems like a storm is approaching. How will you react?",
+    "option_1": {
+      "text": "Prepare the population for the upcoming storm",
+      "description": "Quick action led to minimal losses.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Order the army to evacuate everyone!",
+      "description": "Your misguided and costly decision resulted in significant losses.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 3
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Ignore the threat; it's just a storm",
+      "description": "Who cares about some rain? If a few beggars die, so be it.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "name": "Ominous Prophecy",
+    "description": "Rumors of an ominous prophecy spreading in the kingdom, predicting misfortunes and disasters. How will you react to this situation?",
+    "option_1": {
+      "text": "Organize a ceremony to reassure the people",
+      "description": "The priests conveyed to the people that the prophecy has already come true, and you prevented it, making the people see you as a savior.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Initiate an investigation into the prophecy",
+      "description": "As you suspected, your enemies wanted to destabilize your state, but you managed to catch them in the act.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Ignore the rumors, focus on everyday matters",
+      "description": "Who cares about the ramblings of the commoners about some stories? The only thing that matters is the feast on Tuesday.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": 0
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "name": "Noble Conspiracy",
+    "description": "A conspiracy arises among the nobility with the aim of overthrowing your rule. How will you react to this threat?",
+    "option_1": {
+      "text": "Conduct arrests and face the rebels",
+      "description": "The unexpected operation broke the ranks of the rebels, and despite significant losses, it prevented a rebellion.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": -2
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": -3
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Negotiate with the rebels, promising concessions",
+      "description": "You cannot afford to let the country descend into civil war, so you decided to give up some of your power.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": -1
+        },
+        {
+          "resource": "Control",
+          "value": -2
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Escape from the castle, seek refuge outside the kingdom",
+      "description": "Maybe in a few years, they will want their king back.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 0
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -5
+        },
+        {
+          "resource": "People",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "name": "Extraordinary Celestial Phenomenon",
+    "description": "An incredible astronomical phenomenon attracts people's attention. How will you use this event?",
+    "option_1": {
+      "text": "Organize a religious ceremony, declaring it a sign of divine grace",
+      "description": "Your high priests quickly conveyed to the people that these phenomena are a sign from God that their ruler is chosen by Him.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -1
+        },
+        {
+          "resource": "Money",
+          "value": -1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": 2
+        },
+        {
+          "resource": "People",
+          "value": 2
+        }
+      ]
+    },
+    "option_2": {
+      "text": "Ignore the phenomenon, focusing on everyday matters",
+      "description": "Who cares about some arrangement of clouds or stars.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": 1
+        },
+        {
+          "resource": "Money",
+          "value": 1
+        },
+        {
+          "resource": "Army",
+          "value": 0
+        },
+        {
+          "resource": "Control",
+          "value": -1
+        },
+        {
+          "resource": "People",
+          "value": -1
+        }
+      ]
+    },
+    "option_3": {
+      "text": "Investigate the phenomenon scientifically, trying to understand its source",
+      "description": "Months of research did not explain why this phenomenon occurred, but many fields of science significantly advanced.",
+      "consequences": [
+        {
+          "resource": "Food",
+          "value": -2
+        },
+        {
+          "resource": "Money",
+          "value": -2
+        },
+        {
+          "resource": "Army",
+          "value": 1
+        },
+        {
+          "resource": "Control",
+          "value": 1
+        },
+        {
+          "resource": "People",
+          "value": 1
+        }
+      ]
+    }
+  },
+  {
+  "id": "17",
+  "name": "Mysterious Disappearances",
+  "description": "Mysterious disappearances of people begin to occur in various parts of the kingdom. How will you react to this problem?",
+  "option_1": {
+    "text": "Send an investigator to examine the disappearances",
+    "description": "The investigation revealed that a mysterious group of assassins was abducting people to recruit them, and upon discovery, they offered you their services.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 1
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": -1
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Organize a citizen's guard to ensure security",
+    "description": "People should deal with other people, so new militia units should handle this problem or at least help calm the people.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 1
+      },
+      {
+        "resource": "People",
+        "value": 2
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Disregard the issue, considering it a coincidence",
+    "description": "It's probably a few unfaithful spouses running away from their wives or some other trivialities. I have more important things to do than look for individual people.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 1
+      },
+      {
+        "resource": "Money",
+        "value": 0
+      },
+      {
+        "resource": "Army",
+        "value": -1
+      },
+      {
+        "resource": "Control",
+        "value": -2
+      },
+      {
+        "resource": "People",
+        "value": -2
+      }
+    ]
+  }
+  },
+  {
+  "id": "18",
+  "name": "Emergence of a New Religion",
+  "description": "A new religion has appeared in the kingdom, attracting many followers. How do you intend to react to this event?",
+  "option_1": {
+    "text": "Ban the practice of the new religion",
+    "description": "You banned those ridiculous heretical notions before they could harm your subjects.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": 1
+      },
+      {
+        "resource": "Army",
+        "value": -2
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": -1
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Tolerate religious diversity",
+    "description": "Like every religion in the state, this one should be tolerated and subsidized to the delight of the gentry.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 1
+      },
+      {
+        "resource": "People",
+        "value": 2
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Adopt the new religion as the official one in the kingdom",
+    "description": "This new idea is very lucrative. In addition to the crowds of religious refugees, the treasures from looted temples have increased your power over the state.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -2
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 1
+      },
+      {
+        "resource": "Control",
+        "value": 4
+      },
+      {
+        "resource": "People",
+        "value": 3
+      }
+    ]
+  }
+  },
+  {
+  "id": "19",
+  "name": "Gift from the Neighbor",
+  "description": "A neighboring state has sent you a valuable gift as a token of friendship. What decisions will you make in light of this generosity?",
+  "option_1": {
+    "text": "Accept the gift with gratitude",
+    "description": "The gift allowed for numerous investments that you managed to realize, gaining a lot in return.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 2
+      },
+      {
+        "resource": "Money",
+        "value": 4
+      },
+      {
+        "resource": "Army",
+        "value": 1
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": 3
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Reject the gift, fearing hidden intentions of the neighbor",
+    "description": "Your suspicion meant that although you lost nothing, you gained!",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": -1
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Organize a festive banquet for representatives of the neighboring state",
+    "description": "Using the gift and your own resources, you hosted a huge banquet to showcase your greatness to your friends.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -3
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": -3
+      },
+      {
+        "resource": "People",
+        "value": 1
+      }
+    ]
+  }
+  },
+  {
+  "id": "20",
+  "name": "Rapid Growth of Trade",
+  "description": "Your state experiences a rapid growth in trade with neighboring kingdoms. What decisions will you make in the face of this phenomenon?",
+  "option_1": {
+    "text": "Invest in the development of trade to increase profits",
+    "description": "Efficient investments resulted in a significant influx of gold and other precious metals into the treasury.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": 4
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": 3
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Impose additional fees and taxes on trade",
+    "description": "A conservative approach eventually killed trade, but incalculable wealth flowed into the treasury.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 1
+      },
+      {
+        "resource": "Money",
+        "value": 5
+      },
+      {
+        "resource": "Army",
+        "value": -1
+      },
+      {
+        "resource": "Control",
+        "value": 1
+      },
+      {
+        "resource": "People",
+        "value": 2
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Form a trade alliance with the most powerful of the neighbors",
+    "description": "Utilizing the exchange of goods and culture, you managed to secure a powerful ally for many years.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -2
+      },
+      {
+        "resource": "Money",
+        "value": 3
+      },
+      {
+        "resource": "Army",
+        "value": 1
+      },
+      {
+        "resource": "Control",
+        "value": 3
+      },
+      {
+        "resource": "People",
+        "value": 0
+      }
+    ]
+  }
+  },
+  {
+  "id": "21",
+  "name": "Sheltered Orphans",
+  "description": "A group of orphans, who lost their families due to various disasters and wars, has appeared in the kingdom. What actions will you take in this situation?",
+  "option_1": {
+    "text": "Build an orphanage and provide them shelter",
+    "description": "The decision to build an orphanage in your name gained you a lot of positive reputation and improved the people's mood significantly.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -2
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 1
+      },
+      {
+        "resource": "People",
+        "value": 5
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Organize a public collection for the orphans",
+    "description": "While the collection was fruitful, it didn't gather enough funds to build a majestic facility. However, people look at you a bit more favorably.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": 2
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 0
+      },
+      {
+        "resource": "People",
+        "value": 3
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Order your soldiers to adopt and raise them as a new generation of soldiers",
+    "description": "After a few years, your army gained many new soldiers.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 2
+      },
+      {
+        "resource": "Control",
+        "value": -2
+      },
+      {
+        "resource": "People",
+        "value": 2
+      }
+    ]
+  }
+  },
+  {
+  "id": "22",
+  "name": "Conquest of New Territories",
+  "description": "Your scouts have discovered an area rich in natural resources. Will you decide to take the risk and conquer these territories?",
+  "option_1": {
+    "text": "Initiate a conquest campaign",
+    "description": "A long and bloody campaign subjugated new rich territories to your rule.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 3
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": -2
+      },
+      {
+        "resource": "Control",
+        "value": 3
+      },
+      {
+        "resource": "People",
+        "value": -3
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Conduct research on the area but refrain from aggressive decisions",
+    "description": "As a result of the research, your people discovered an incredibly warrior-like people inhabiting those territories. By studying their customs, you managed to create new elite units composed of them.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 1
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 2
+      },
+      {
+        "resource": "Control",
+        "value": 1
+      },
+      {
+        "resource": "People",
+        "value": 2
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Ignore the newly discovered areas",
+    "description": "As the chosen by God and people ruler, you should rule the land of your fathers, not some uninhabited wastelands.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": 0
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 0
+      },
+      {
+        "resource": "People",
+        "value": 0
+      }
+    ]
+  }
+  },
+  {
+  "id": "23",
+  "name": "Mocking Artists",
+  "description": "Renowned artists have created an artwork depicting the ruler in a caricatured manner. How will you react to this provocation?",
+  "option_1": {
+    "text": "Ignore and let the art exist",
+    "description": "The mockery of authority significantly reduced both your and your administrators' authority.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": -5
+      },
+      {
+        "resource": "People",
+        "value": 1
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Confiscate the artwork and punish the artists",
+    "description": "The loud artwork, which disappeared from view, quickly lost its fame, and the image of authority didn't suffer much.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": -2
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Commission your own artwork depicting a positive image",
+    "description": "Your quick reaction and huge spending on the artwork overshadowed the piece by independent artists quickly.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 5
+      },
+      {
+        "resource": "People",
+        "value": 1
+      }
+    ]
+  }
+  },
+  {
+  "id": "24",
+  "name": "The Prophet",
+  "description": "A mysterious prophet has appeared at court claiming to have foreseen an impending disaster. People are starting to react panically. How will you react?",
+  "option_1": {
+    "text": "Ignore the prophecy; it's just superstition",
+    "description": "The rabble may believe in such tales, but the government and ruler must objectively view the world.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": 0
+      },
+      {
+        "resource": "Army",
+        "value": 0
+      },
+      {
+        "resource": "Control",
+        "value": 0
+      },
+      {
+        "resource": "People",
+        "value": -1
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Ban prophecies and imprison the prophet",
+    "description": "The costly operation landed the prophet in jail, and his tales quickly withered away.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": -1
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": 0
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Exploit the situation to your advantage and support the prophet",
+    "description": "Religion as opium for the people. It clouds the people's vision and allows you to rule them better.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 1
+      },
+      {
+        "resource": "Money",
+        "value": 1
+      },
+      {
+        "resource": "Army",
+        "value": -1
+      },
+      {
+        "resource": "Control",
+        "value": 2
+      },
+      {
+        "resource": "People",
+        "value": 2
+      }
+    ]
+  }
+  },
+  {
+  "id": "25",
+  "name": "Peace Talks with an Enemy State",
+  "description": "An enemy state has started sending signals about its readiness for peace talks. How will you approach this situation?",
+  "option_1": {
+    "text": "Engage in talks to negotiate peace",
+    "description": "Extended talks allowed you to find a common consensus, ensuring the end of this terrible war.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -1
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 1
+      },
+      {
+        "resource": "Control",
+        "value": -1
+      },
+      {
+        "resource": "People",
+        "value": 1
+      }
+    ]
+  },
+  "option_2": {
+    "text": "Refuse talks and continue the war",
+    "description": "Empty words mean nothing; the only thing that matters is the strength of the army.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": -2
+      },
+      {
+        "resource": "Money",
+        "value": -2
+      },
+      {
+        "resource": "Army",
+        "value": 2
+      },
+      {
+        "resource": "Control",
+        "value": 0
+      },
+      {
+        "resource": "People",
+        "value": -1
+      }
+    ]
+  },
+  "option_3": {
+    "text": "Simulate interest in peace but simultaneously prepare for an ambush",
+    "description": "The enemies were convinced you desired peace. This ambush significantly tilted the victory in the war to your side.",
+    "consequences": [
+      {
+        "resource": "Food",
+        "value": 0
+      },
+      {
+        "resource": "Money",
+        "value": -1
+      },
+      {
+        "resource": "Army",
+        "value": 1
+      },
+      {
+        "resource": "Control",
+        "value": 5
+      },
+      {
+        "resource": "People",
+        "value": 0
+      }
+    ]
+  }
+  }
+]

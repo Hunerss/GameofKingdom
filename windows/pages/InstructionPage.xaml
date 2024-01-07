@@ -14,11 +14,11 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Instrukcja</TextBlock>
+        <TextBlock Style="{StaticResource HeaderTextStyle}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="32" Grid.Row="1" FontWeight="Bold">Instrukcja</TextBlock>
         <ScrollViewer Grid.Row="2" BorderThickness="0">
-            <TextBlock TextWrapping="Wrap" Margin="15" Padding="5">
+            <TextBlock TextWrapping="Wrap" Margin="15" Padding="5" Style="{StaticResource TextBlockStyle}">
                 <TextBlock.Background>
-                    <SolidColorBrush Color="Gray" Opacity="0.5"/>
+                    <SolidColorBrush Color="Gray" Opacity="0.3"/>
                 </TextBlock.Background>
                 Instrukcja do Gry "Game of Kingdom":<LineBreak/><LineBreak/>
                 "Game of Kingdom" to prosta, lecz fascynująca gra karciano-strategiczna, w której gracze podejmują decyzje w losowo generowanych zdarzeniach. Gra polega na utrzymaniu równowagi w państwie poprzez mądre wybory i zarządzanie zasobami.<LineBreak/>
@@ -33,6 +33,6 @@
                 Gra "Game of Kingdom" oferuje dynamiczną rozgrywkę, gdzie każda decyzja ma wpływ na losy państwa. Celem gracza jest osiągnięcie jak największej ilości punktów w ograniczonym czasie oraz zdobycie miejsca na prestiżowej tablicy wyników.<LineBreak/>
             </TextBlock>
         </ScrollViewer>
-        <Button Grid.Row="3" Width="175" FontSize="22" Content="Wróć do menu" HorizontalAlignment="Center" Click="Btn_return"/>
+        <Button Style="{StaticResource BaseButtonStyle}" Grid.Row="3" MinWidth="200" FontSize="30" Height="60" Content="Wróć do menu" HorizontalAlignment="Center" Click="Btn_return"/>
     </Grid>
 </UserControl>

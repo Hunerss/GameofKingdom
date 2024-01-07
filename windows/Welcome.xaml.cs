@@ -1,6 +1,9 @@
 ﻿using GameofKingdom.rescources.classes;
+using GameofKingdom.windows.pages;
 using GameofKingdom.windows.tmp.WelcomeWindowPages;
 using System;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows;
 
 namespace GameofKingdom.windows
@@ -12,13 +15,17 @@ namespace GameofKingdom.windows
     {
         public Welcome()
         {
+            //InstallFont();
             InitializeComponent();
             FileHandeler.CheckScores(false);
             if (FileHandeler.CheckFile(true))
                 Basic.NavigateTo(frame, new MainPage(this));
             else
                 Basic.NavigateTo(frame, new LicencePage(this));
-            Basic.ApplySettings(this);
+            //FileHandeler.WriteEventsFiles();
+            //Basic.NavigateTo(frame, new TestField());
         }
+
+
     }
 }

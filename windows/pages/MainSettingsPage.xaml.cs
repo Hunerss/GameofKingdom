@@ -21,6 +21,7 @@ namespace GameofKingdom.windows.pages.SettingsWindowPages
             window = win;
             InitializeComponent();
             SetMySettings();
+            Basic.ApplySettings(window);
         }
 
         private void SetMySettings()
@@ -32,7 +33,7 @@ namespace GameofKingdom.windows.pages.SettingsWindowPages
                 {
                     List<SettingsModel> settingsList = JsonSerializer.Deserialize<List<SettingsModel>>(loadedJson);
                     SettingsModel settings = settingsList[0];
-                    language.SelectedIndex = settings.Language;
+                    //language.SelectedIndex = settings.Language;
                     resolution.SelectedIndex = settings.Resolution;
                 }
                 else
@@ -49,18 +50,21 @@ namespace GameofKingdom.windows.pages.SettingsWindowPages
         private void Navigation(object sender, RoutedEventArgs e)
         {
             int selected_resolution;
-            string cbx_language = ((ComboBoxItem)language.SelectedItem).Name;
+            //string cbx_language = ((ComboBoxItem)language.SelectedItem).Name;
             string cbx_resolution = ((ComboBoxItem)resolution.SelectedItem).Name;
-            int selected_language = Convert.ToInt32(cbx_language[9].ToString());
+            //int selected_language = Convert.ToInt32(cbx_language[9].ToString());
 
             if (cbx_resolution[11].ToString() == "X")
                 selected_resolution = 10;
             else
                 selected_resolution = Convert.ToInt32(cbx_resolution[11].ToString());
 
-            Console.WriteLine("New settings values: " + selected_language + " " + selected_resolution);
+            //             Console.WriteLine("New settings values: " + selected_language + " " + selected_resolution);
 
-            FileHandeler.OverrideSettings(selected_language, selected_resolution);
+            Console.WriteLine("New settings values: " +  selected_resolution);
+
+            //            FileHandeler.OverrideSettings(selected_language, selected_resolution);
+            FileHandeler.OverrideSettings(0, selected_resolution);
             Basic.NavigateTo(window.frame, new MainPage(window));
         }
     }

@@ -16,7 +16,7 @@
             <!-- Język -->
             <!-- Grafika tła -->
             <!-- Może animacje eventów -->
-            <TextBlock Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 0" FontSize="40" FontWeight="Bold" Text="Ustawienia"/>
+            <TextBlock Style="{StaticResource HeaderTextStyle}" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 0" FontSize="40" FontWeight="Bold" Text="Ustawienia"/>
 
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
@@ -30,24 +30,21 @@
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Język"/>
-                    <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Rozdzielczość"/>
+                    <!--<TextBlock Style="{StaticResource BigTextStyle}" Grid.Row="1" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Język"/>-->
+                    <TextBlock Style="{StaticResource BigTextStyle}" Grid.Row="1" Margin="0 0 25 0" FontSize="32" FontWeight="Bold" Text="Rozdzielczość"/>
                 </Grid>
                 <Grid Grid.Column="2">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
-                    <ComboBox Grid.Row="1" x:Name="language" Width="150" Height="30" FontSize="16" FontWeight="Bold">
+                    <!--<ComboBox Grid.Row="1" x:Name="language" Width="150" Height="30" FontSize="16" FontWeight="Bold">
                         <ComboBoxItem Name="language_0" IsSelected="True">Polski</ComboBoxItem>
                         <ComboBoxItem Name="language_1" >Angielski</ComboBoxItem>
-                        <ComboBoxItem Name="language_2" >Rosyjski</ComboBoxItem>
-                    </ComboBox>
-                    <ComboBox Grid.Row="2" Name="resolution" Width="150" Height="30" FontSize="16" FontWeight="Bold">
+                    </ComboBox>-->
+                    <ComboBox Grid.Row="1" Name="resolution" Width="150" Height="30" FontSize="16" FontWeight="Bold">
                         <ComboBoxItem Name="resolution_0" IsSelected="True">800x450</ComboBoxItem>
                         <ComboBoxItem Name="resolution_1">800x600</ComboBoxItem>
                         <ComboBoxItem Name="resolution_2">1024x768</ComboBoxItem>
@@ -62,7 +59,7 @@
                     </ComboBox>
                 </Grid>
             </Grid>
-            <Button Grid.Row="7" FontSize="26" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Navigation">Wróć do menu i zapisz</Button>
+            <Button Style="{StaticResource BaseButtonStyle}" Content="Wróc do menu i zapisz" Grid.Row="7" FontSize="30" Width="310" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Navigation"/>
         </Grid>
     </Grid>
 </UserControl>
