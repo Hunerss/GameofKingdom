@@ -99,6 +99,7 @@ namespace GameofKingdom.windows.pages.MainWindowPages
 
         private void SetEventAftermatch(int eventId, int option, Boolean critical)
         {
+            option2.IsEnabled = true;
             if (critical)
             {
                 CriticalEventModel model = CriticalEvents[eventId];
