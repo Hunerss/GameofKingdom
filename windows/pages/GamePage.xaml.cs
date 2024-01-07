@@ -157,7 +157,7 @@ namespace GameofKingdom.windows.pages.MainWindowPages
                 Console.WriteLine("Game Finished");
                 int score = (CountedEvents * Difficulty * 5) - CountedTime;
                 FileHandeler.WriteScore(score, UserName);
-                if(EventId == 7 || EventId == 10)
+                if (EventId == 7 || EventId == 10)
                     MessageBox.Show("Gracz: " + UserName + Environment.NewLine + "Wygrał grę z wynikiem: " + score + Environment.NewLine + "I zajeło mu to " + CountedTime + " tur.");
                 else
                     MessageBox.Show("Gracz: " + UserName + Environment.NewLine + "Ukończył grę z wynikiem: " + score + Environment.NewLine + "I zajeło mu to " + CountedTime + " tur.");
@@ -173,39 +173,50 @@ namespace GameofKingdom.windows.pages.MainWindowPages
             }
             else
             {
-                Button btn = (Button)sender;
-                if (btn.Name == "option1")
+                if (!option1.IsEnabled && !option2.IsEnabled && !option3.IsEnabled)
                 {
-                    // kod 1 przycisku
-                    SetEventAftermatch(EventId, 1, Criticalevent);
-                    ChangeProgressBars(1);
-                    CountedEvents += 1;
-                }
-                else if (btn.Name == "option2")
-                {
-                    // kod 2 przycisku
-                    SetEventAftermatch(EventId, 2, Criticalevent);
-                    ChangeProgressBars(2);
-                    CountedEvents += 1;
-                }
-                else if (btn.Name == "option3")
-                {
-                    // kod 3 przycisku
-                    SetEventAftermatch(EventId, 3, Criticalevent);
-                    if (Criticalevent)
-                        if (CriticalEvents[EventId].option_3.end)
-                        {
-                            FinishGame = true;
-                            option2.IsEnabled = true;
-                        }
-                    ChangeProgressBars(3);
-                    CountedEvents += 1;
+                    option2.IsEnabled = true;
+                    option_2.Text = "Podlicz punkty";
+                    int score = (CountedEvents * Difficulty * 5) - CountedTime;
+                    FileHandeler.WriteScore(score, UserName);
+                    MessageBox.Show("Gracz: " + UserName + Environment.NewLine + "Drastycznie przegrał grę z wynikiem: " + score + Environment.NewLine + "I zajeło mu to " + CountedTime + " tur.");
                 }
                 else
                 {
-                    Console.Error.WriteLine("Operate game - error log - Critical error, unkown button was clicked - " + btn.Name);
+                    Button btn = (Button)sender;
+                    if (btn.Name == "option1")
+                    {
+                        // kod 1 przycisku
+                        SetEventAftermatch(EventId, 1, Criticalevent);
+                        ChangeProgressBars(1);
+                        CountedEvents += 1;
+                    }
+                    else if (btn.Name == "option2")
+                    {
+                        // kod 2 przycisku
+                        SetEventAftermatch(EventId, 2, Criticalevent);
+                        ChangeProgressBars(2);
+                        CountedEvents += 1;
+                    }
+                    else if (btn.Name == "option3")
+                    {
+                        // kod 3 przycisku
+                        SetEventAftermatch(EventId, 3, Criticalevent);
+                        if (Criticalevent)
+                            if (CriticalEvents[EventId].option_3.end)
+                            {
+                                FinishGame = true;
+                                option2.IsEnabled = true;
+                            }
+                        ChangeProgressBars(3);
+                        CountedEvents += 1;
+                    }
+                    else
+                    {
+                        Console.Error.WriteLine("Operate game - error log - Critical error, unkown button was clicked - " + btn.Name);
+                    }
+                    Aftermatch = true;
                 }
-                Aftermatch = true;
             }
         }
 
